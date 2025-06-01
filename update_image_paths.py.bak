@@ -1,0 +1,24 @@
+import os
+import re
+
+def update_image_paths(directory):
+    for root, dirs, files in os.walk(directory):
+        for file in files:
+            if file.endswith('.md'):
+                file_path = os.path.join(root, file)
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                
+                # Update image paths
+                updated_content = re.sub(
+                    r'!\[(.*?)\]\((.*?images/)(.*?)\)',
+                    r'![\1](/assets/\3)',
+                    content
+                )
+                
+                # Write back the updated content
+                with open(file_path, 'w', encoding='utf-8') as f:
+                    f.write(updated_content)
+
+if __name__ == '__main__':
+    update_image_paths('docs') 
