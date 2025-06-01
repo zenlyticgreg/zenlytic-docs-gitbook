@@ -4,7 +4,7 @@
 
 Dashboards are how you save questions to refer back to in the future. You can access dashboards by navigating to the dashboard page in the main navigation bar. 
 
-![Dashboards 1](../assets/dashboards-1.gif)
+![Dashboards 1](/assets/dashboards-1.gif)
 
 With dashboards, you can do the following: [links]
 * [Creating a new dashboard](https://app.intercom.com/a/apps/jdz661k7/articles/articles/7880469/show)

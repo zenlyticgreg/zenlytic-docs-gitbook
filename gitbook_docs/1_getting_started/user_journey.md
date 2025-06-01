@@ -8,4 +8,4 @@ To get to the "User Journey" you can open an explore question of the metric you 
 
 Then run the question, and you'll see the flow by the default category. You can change the default category in the drop-down under "Additional settings," along with the number of actions and the top categories shown. 
 
-![User Journey 1](../assets/user-journey-1.gif)
+![User Journey 1](/assets/user-journey-1.gif)

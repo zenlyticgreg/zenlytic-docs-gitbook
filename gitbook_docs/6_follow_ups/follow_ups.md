@@ -14,19 +14,19 @@ Once you have [selected your metrics and slices](/articles/6958661-slicing) , as
 
 Click on any slice from the visualization section to show the follow up question types available.
 
-![Follow Ups 1](../assets/follow-ups-1.gif)
+![Follow Ups 1](/assets/follow-ups-1.gif)
 #### Dragging section on a line graph
 
 Drag your cursor across a line graph to select a range of a slice to show the follow up question types available.
 
 If there is more than one value in the visualization, you will be prompted to select one. 
 
-![Follow Ups 2](../assets/follow-ups-2.gif)
+![Follow Ups 2](/assets/follow-ups-2.gif)
 #### Clicking on table cell value
 
 Click on the table's cell value to show the follow up question types available.
 
-![Follow Ups 3](../assets/follow-ups-3.gif)
+![Follow Ups 3](/assets/follow-ups-3.gif)
 Follow up question types
 
 There are three follow up questions types you can use to add more details to your question. They are 'Filter on selected', 'Explain the change', and 'Drill into'. 
@@ -35,13 +35,13 @@ There are three follow up questions types you can use to add more details to you
 
 Filter on selected will filter the slice range you have selected and narrows down the metrics in the question. 
 
-![Followup+filter+on+selected](../assets/followup+filter+on+selected.gif)
+![Followup+filter+on+selected](/assets/followup+filter+on+selected.gif)
 
 #### Explain the change
 
 'Explain the change' adds slices that most likely correlate to the difference in metric that has been selected. [Here is an article](/articles/6927539-explain-change) going into more details about this question type.
 
-![Followupexplain+the+change](../assets/followupexplain+the+change.gif)
+![Followupexplain+the+change](/assets/followupexplain+the+change.gif)
 
 #### Drill into
 
@@ -49,4 +49,4 @@ Filter on selected will filter the slice range you have selected and narrows dow
  
 Each 'Drill into' slice can be configured to your business needs. [Here's an example](/data_modeling/dimension#examples) of how that can be customized.
 
-![Followup+drill+into+x](../assets/followup+drill+into+x.gif)
+![Followup+drill+into+x](/assets/followup+drill+into+x.gif)

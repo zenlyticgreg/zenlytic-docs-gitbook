@@ -10,7 +10,7 @@ For both options, select the 3-dot menu in the top right-hand corner of a chart 
 
 Explore from here
 
-![Following Up From Dashboard 1](../assets/following-up-from-dashboard-1.gif)
+![Following Up From Dashboard 1](/assets/following-up-from-dashboard-1.gif)
 Start a chat with Zöe
 
 ![Following Up From Dashboard 2 - gif)

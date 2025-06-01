@@ -70,7 +70,7 @@ Optionally, you may choose to set values for:
     These may already be set up, but make sure those are showing up in the Okta Profile Editor. 
     ​
 
-![Image](../assets/image.png)
+![Image](/assets/image.png)
 #### Configuration
 
 As a prerequisite, you should have received your company's unique `Company ID`.

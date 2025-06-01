@@ -33,7 +33,7 @@ Here we'll give it a name, for example `zenlytic-client-app`, then select the `N
 
 Then click the `Create` button.
 
-![Image](../assets/image.png)
+![Image](/assets/image.png)
 
 3. Configuring your Zenlytic Application
 
@@ -44,7 +44,7 @@ Before continuing, ensure that you have obtained these values from your Zenlytic
 
 Now let's go to our newly created application under the `Enterprise applications` section. Go ahead and click the name to open it.
 
-![Image](../assets/image.png)
+![Image](/assets/image.png)
 We'll select the `Single sign-on` section, then choose `SAML` as the single sign-on method
 
 ![Image - png)
@@ -59,7 +59,7 @@ Now under `Reply URL (Assertion Consumer Service URL)`, enter the value the Zenl
 
 Your form should look similar to this:
 
-![Image](../assets/image.png)
+![Image](/assets/image.png)
 
 Hit the `Save` button and hit the `X` button.
 
@@ -72,7 +72,7 @@ We'll need to make a few adjustments to ensure Zenlytic is using the correct fie
  
 Click the `Edit` button for `Attributes & Claims`.
 
-![Image](../assets/image.png)
+![Image](/assets/image.png)
 Zenlytic requires these fields to be mapped:
 * `emailaddress`
 * `givenname`
@@ -96,7 +96,7 @@ So just in case, we'll clear those values out.
 
 Click on each of the claims under `Additional Claims`, and clear out the `Namespace` value
 
-![Image](../assets/image.png)
+![Image](/assets/image.png)
 Your claim section should now similar to this:
 
 ![Image - png)
@@ -148,7 +148,7 @@ You may be taken back to the this screen, if so just go back to your application
 
 Copy this Url and you'll need to send it to your Zenlytic contact.
 
-![Image](../assets/image.png)
+![Image](/assets/image.png)
 Once we receive that url, we'll finish up the rest of the setup on our and let you know when you're all set!
 
 6. Adding Users/Groups to Zenlytic
@@ -159,7 +159,7 @@ Now click the "Add user/group" button.
 
 Assign whomever you'd like to have access to Zenlytic.
 
-![Image](../assets/image.png)
+![Image](/assets/image.png)
 
 7. On Completion
 
@@ -180,14 +180,14 @@ For information on available custom claims, [see this section.](#h_c64b29dae2)
 
 First we'll go back to the `Single sign-on` section for our App and click `Edit` on `Attributes & Claims`.
 
-![Image](../assets/image.png)
+![Image](/assets/image.png)
 Now click `Add new claim`
 
 ![Image - png)
 Now click `Add new claim`](/images/image.png)
 We'll set up the `zenlytic_role` field, so in the `Name` input, type `zenlytic_role`.
 
-![Image](../assets/image.png)
+![Image](/assets/image.png)
 Now open `Claim Conditions` and select `Any` for your `User type`
 
 ![Image - png)
@@ -196,7 +196,7 @@ Now under `Scoped Groups`, select the user group that you'd like to set the `zen
 
 In our case, we've created a group called `Zenlytic Admin` which denotes user that should have full access to Zenlytic.
 
-![Image](../assets/image.png)
+![Image](/assets/image.png)
 Select `Attribute` in `Source`
 
 ![Image - png)
@@ -205,11 +205,11 @@ Select `Attribute` in `Source`](/images/image.png)
 Now type in the value that you wish this user group to have for `zenlytic_role`. In our case, we want it to have `admin`. Make sure to hit `enter` after typing your value. 
 ​
 
-![Image](../assets/image.png)
+![Image](/assets/image.png)
 
 Lets say we want all other users to have the lowest level of access, `view`, you would just add another condition, where here my `Scoped Group` is a group called `All Users`.
 
-![Image](../assets/image.png)
+![Image](/assets/image.png)
 
 Debug Steps
 
@@ -219,7 +219,7 @@ If you're attempting to sign in to Zenlytic using Entra, and you're seeing error
 
 You can adjust a user/group role by going to the Users tab and then assigning them a proper role.
 
-![Image](../assets/image.png)
+![Image](/assets/image.png)
 
 If you're seeing an error saying that `email` is a required value in the claim mapping, make sure your user has a valid email in the `Contact Information` section for that user
 

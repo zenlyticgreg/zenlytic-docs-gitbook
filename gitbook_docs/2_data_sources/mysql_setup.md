@@ -12,7 +12,7 @@ Host
 
 The host for MySQL is the "Endpoint" value in your AWS console (if you're using AWS). If you're not using AWS, you must get the host value and enter it.
 
-![Mysql Setup 1](../assets/mysql-setup-1.png)
+![Mysql Setup 1](/assets/mysql-setup-1.png)
 
 In this example using MySQL hosted on RDS, the host (privacy obscured) is `mysql-behind-ssh-tunnel.blahblahblah.us-east-1.rds.amazonaws.com`
 

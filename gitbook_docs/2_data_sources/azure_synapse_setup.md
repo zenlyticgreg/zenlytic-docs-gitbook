@@ -12,7 +12,7 @@ Host
 
 The host for Azure Synapse Analytics is the "Dedicated SQL Endpoint" value in your Azure console.
 
-![Azure Synapse Setup 1](../assets/azure-synapse-setup-1.png)
+![Azure Synapse Setup 1](/assets/azure-synapse-setup-1.png)
 In this example, using Azure Synapse Analytics Warehouse with a Dedicated SQL Pool, the host is `zenlytic-demo-warehouse.sql.azuresynapse.net`
 
 Username

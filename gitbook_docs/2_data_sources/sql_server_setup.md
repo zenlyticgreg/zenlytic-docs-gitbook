@@ -12,7 +12,7 @@ Host
 
 The host for SQL Server is the "Endpoint" value in your AWS console (if you're using AWS RDS). If you're not using AWS, you must get the host value and enter it.
 
-![Sql Server Setup 1](../assets/sql-server-setup-1.png)
+![Sql Server Setup 1](/assets/sql-server-setup-1.png)
 In this example using SQL Server Express 2019 hosted on RDS, the host (privacy obscured) is `sql-server-demo.blahblahblah.us-east-1.rds.amazonaws.com`
 
 Username

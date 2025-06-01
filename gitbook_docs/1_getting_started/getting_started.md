@@ -4,11 +4,11 @@
 
 Zenlytic is an AI-powered business intelligence platform that helps you understand the "Why" behind your data. There are several different "question types" you can ask and answer in Zenlytic. You can change the "question type" asked using this menu from the interactive question page.
 
-![Getting Started 1](../assets/getting-started-1.png)
+![Getting Started 1](/assets/getting-started-1.png)
 
 Then you'll see the model to change the "question type."
 
-![Getting Started 2](../assets/getting-started-2.png)
+![Getting Started 2](/assets/getting-started-2.png)
 
 ## Question Types
 
@@ -28,14 +28,14 @@ The funnel question lets you quickly look at sequences of customer interactions 
 
 You can also access your data via a chat interface (which is also the homepage) and have Zoë, your AI analyst, answer your questions.
 
-![Zoë Interface](../assets/getting-started-3.png)
+![Zoë Interface](/assets/getting-started-3.png)
 
 ## Dashboards
 
 You can also access saved views of your data using dashboards. To get to the list of your company's dashboards, you can click on the Dashboards option in the top navigation bar. Then to go to a dashboard, click on its name.
 
-![Dashboard List](../assets/getting-started-3.png)
+![Dashboard List](/assets/getting-started-3.png)
 
 On a dashboard, you can click the three dots and then "Explore from here" on any of the plots to go into an interactive interface to ask follow-up questions about the plot.
 
-![Explore from Dashboard](../assets/getting-started-4.png)
+![Explore from Dashboard](/assets/getting-started-4.png)

@@ -10,7 +10,7 @@ There are several ways to navigate to Slice and Explore your data.
 
 #### Using the 'New Question' button in the navigation bar
 
-![Newqn](../assets/newqn.gif)
+![Newqn](/assets/newqn.gif)
 #### From a dashboard using the 'Explore from here' button
 
 ![Slice Explore 1 - gif)
@@ -20,4 +20,4 @@ Saving your question to a dashboard
 
 Save your Slice and Explore question to an existing or new dashboard by clicking the 3 dots on the upper right hand side of the page next to the 'Run Question' button.
 
-![Slice Explore 2](../assets/slice-explore-2.gif)
+![Slice Explore 2](/assets/slice-explore-2.gif)

@@ -9,10 +9,10 @@ To create a group for sharing permissions, click on your account icon in the top
 Create a group, name the group, and lastly, add desired team members to the group. This group can be used on the dashboard level to govern access to reports in your workspace. 
 ​
 
-![Workspace Groups 1](../assets/workspace-groups-1.gif)
+![Workspace Groups 1](/assets/workspace-groups-1.gif)
 
 Creating Dashboard Level Permissions
 
 To create dashboard level permissions, on the dashboard page, click on the 'Share' button in the top right hand corner to select a group and the group's permission level. 
 
-![Workspace Groups 2](../assets/workspace-groups-2.gif)
+![Workspace Groups 2](/assets/workspace-groups-2.gif)

@@ -15,7 +15,7 @@ Write in a custom title or leave Zenlytic to generate a dynamic insight for you 
 Search and select the existing dashboard you would like to add this chart to. 
 ​
 
-![Editing Dashboards 1](../assets/editing-dashboards-1.gif)
+![Editing Dashboards 1](/assets/editing-dashboards-1.gif)
 
 Editing Dashboards
 
@@ -31,17 +31,17 @@ How to delete a question in a dashboard
 Click on 'Edit Mode' in the top right-hand corner of the screen. Click on the 'x' cross on the top right-hand corner of the question. 
 ​
 
-![Editing Dashboards 2](../assets/editing-dashboards-2.gif)
+![Editing Dashboards 2](/assets/editing-dashboards-2.gif)
 How to edit a question in the dashboard
 
 Click on the meatball menu button in the top right hand corner of a question you'd like to edit in a dashboard. 
 ​
 
-![Editing Dashboards 3](../assets/editing-dashboards-3.gif)
+![Editing Dashboards 3](/assets/editing-dashboards-3.gif)
 
 Once you are in the explore section in the new tab, make the edits you want to the question. 
  
 Navigate back to the dashboard. Click on 'Edit Mode' and delete the old chart. Click on the 'Save Edits' button to save your changes. 
 ​
 
-![Editing Dashboards 4](../assets/editing-dashboards-4.gif)
+![Editing Dashboards 4](/assets/editing-dashboards-4.gif)

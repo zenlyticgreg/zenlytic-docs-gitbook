@@ -12,7 +12,7 @@ Account
 
 The account in Snowflake is how we know which Snowflake warehouse to connect to. To get this value look at the URL for your Snowflake (e.g. `https://blah12345.us-east-1.snowflakecomputing.com/console`) and take the part after `https://` and before `snowflakecomputing.com`.
 
-![Snowflake Setup 1](../assets/snowflake-setup-1.png)
+![Snowflake Setup 1](/assets/snowflake-setup-1.png)
 
 In this example, you'd enter `blah12345.us-east-1` for your account.
 
@@ -20,7 +20,7 @@ Username
 
 This is the username of your user in Snowflake. This can be found in the upper right hand of the page when you're logged in. 
 
-![Snowflake Setup 2](../assets/snowflake-setup-2.png)
+![Snowflake Setup 2](/assets/snowflake-setup-2.png)
 
 In this example, the username is `pblankley` 
 
@@ -32,7 +32,7 @@ Warehouse
 
 Warehouses in Snowflake are units of compute, not a place to store data. The default warehouse is `COMPUTE_WH`, but you can use whichever warehouse you want. To see warehouse options for your role, select from the drop-down in the Snowflake UI.
 
-![Snowflake Setup 3](../assets/snowflake-setup-3.png)
+![Snowflake Setup 3](/assets/snowflake-setup-3.png)
 
 In this example, we'll use the `REPORT_WH` warehouse.
 
@@ -40,7 +40,7 @@ Database
 
 Here you'll select the snowflake database you want to use as a default in Zenlytic. You can always use data from other databases. This one just acts as a default. You can also see database options in the drop-down in the Snowflake UI.
 
-![Snowflake Setup 3](../assets/snowflake-setup-3.png)
+![Snowflake Setup 3](/assets/snowflake-setup-3.png)
 
 In this example, we're using the `ZENLYTIC` database.
 
@@ -48,7 +48,7 @@ Role (optional)
 
 The role in Snowflake is the set of permissions you want your user to have. This field is optional, and if you leave it blank, Snowflake will use your user's default role. You can find roles your user has access to in the upper right of the Snowflake UI.
 
-![Snowflake Setup 3](../assets/snowflake-setup-3.png)
+![Snowflake Setup 3](/assets/snowflake-setup-3.png)
 
 In this example, we're using the `REPORTER` role. Note: if the role you select doesn't have access to certain data in your warehouse, Zenlytic will be unable to access that data as well.
 

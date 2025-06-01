@@ -12,7 +12,7 @@ Service Token
 
 You'll go to settings in your Motherduck interface, and copy the service token using the copy button on this page.
 
-![Motherduck Setup 1](../assets/motherduck-setup-1.png)
+![Motherduck Setup 1](/assets/motherduck-setup-1.png)
 
 Then, you'll put the service token in the Zenyltic interface.
 

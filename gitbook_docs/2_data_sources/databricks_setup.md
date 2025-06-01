@@ -12,7 +12,7 @@ Server Hostname
 
 The Server Hostname in Databricks is how we know which Databricks SQL Warehouse to connect to. To get this value, go to the Connection Details tab of the SQL warehouse you want to connect.
 
-![Databricks Setup 1](../assets/databricks-setup-1.png)
+![Databricks Setup 1](/assets/databricks-setup-1.png)
 
 The value under the first header, "Server Hostname" is the value you should use.
 
@@ -20,13 +20,13 @@ Http Path
 
 To get this value, go to the Connection Details tab of the SQL warehouse you want to connect and use the value under the "Http Path" heading.
 
-![Databricks Setup 1](../assets/databricks-setup-1.png)
+![Databricks Setup 1](/assets/databricks-setup-1.png)
 
 Personal Access Token
 
 This is the access token associated with the user you want to use for connecting to Zenlytic. To find or create this token, go to User Settings -> Developer -> Access Tokens
 
-![Databricks Setup 2](../assets/databricks-setup-2.png)
+![Databricks Setup 2](/assets/databricks-setup-2.png)
 Then, click Generate New Token, set the Lifetime (days) to empty (this indicates the token does not expire), give the token a name like "Zenlytic" and click Generate
 
 ![Databricks Setup 3 - png)

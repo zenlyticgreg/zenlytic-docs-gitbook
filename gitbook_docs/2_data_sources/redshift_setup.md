@@ -13,7 +13,7 @@ Host
 
 The host for Redshift is the "Endpoint" value in your AWS console. 
 
-![Redshift Setup 1](../assets/redshift-setup-1.png)
+![Redshift Setup 1](/assets/redshift-setup-1.png)
 
 In this example using Redshift Serverless, the host (privacy obscured) is `default.123456789.us-east-1.redshift-serverless.amazonaws.com:5439/dev`
 
@@ -29,7 +29,7 @@ Database
 
 This is the default database to connect to when connecting to Redshift. You can find this value under Namespace Configuration.
 
-![Redshift Setup 2](../assets/redshift-setup-2.png)
+![Redshift Setup 2](/assets/redshift-setup-2.png)
 
 In this example, the database is `dev`
 

@@ -12,7 +12,7 @@ Host
 
 The host for Postgres is the "Endpoint" value in your AWS console (if you're using AWS). If you're not using AWS, you must get the host value and enter it.
 
-![Postgres Setup 1](../assets/postgres-setup-1.png)
+![Postgres Setup 1](/assets/postgres-setup-1.png)
 In this example using Postgres hosted on RDS, the host (privacy obscured) is `zenlytic-demo-data-db.blahblahblah.us-east-1.rds.amazonaws.com`
 
 Username

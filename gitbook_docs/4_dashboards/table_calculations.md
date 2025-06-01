@@ -2,38 +2,38 @@
 
 Table calculations let you perform calculations on the results of your query. You can add, edit, and delete columns in the table view.
 
-![Table Calculations 1](../assets/table-calculations-1.png)
+![Table Calculations 1](/assets/table-calculations-1.png)
 
 ## Adding a Column
 
 To add a column, click the "+" button in the table header. You can then enter a formula for your calculation.
 
-![An example of using Zenlytic's autocomplete to find columns](../assets/table-calculations-2.png)
+![An example of using Zenlytic's autocomplete to find columns](/assets/table-calculations-2.png)
 
 ## Editing and Deleting Columns
 
 You edit and delete a column by hovering the column in the table and then clicking on the column menu button.
 
-![Column menu options](../assets/table-calculations-3.png)
+![Column menu options](/assets/table-calculations-3.png)
 
 ## Example Calculations
 
 Here are some examples of table calculations you can perform:
 
-![Example calculations](../assets/table-calculations-4.png)
+![Example calculations](/assets/table-calculations-4.png)
 
 General Tips
 ============
 
 #### Use autocomplete to find columns and functions. You can click or using your keyboard's arrow keys/enter to make a selection.
 
-![An example of using Zenlytic's autocomplete to find columns](../assets/image.png)#### You edit and delete a column by hovering the column in the table and then clicking on the column menu button
+![An example of using Zenlytic's autocomplete to find columns](/assets/image.png)#### You edit and delete a column by hovering the column in the table and then clicking on the column menu button
 
-![Image](../assets/image.png)
+![Image](/assets/image.png)
 
 #### There's a collection of common formulas available in the column menu for columns that are `measures`.
 
-![Image](../assets/image.png)
+![Image](/assets/image.png)
 
 Functions
 =========
