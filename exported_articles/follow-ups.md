@@ -2,75 +2,51 @@
 
 > Ask follow up questions by using filtering, 'Explain the change' question type, and 'Drill into' features
 
-
-Follow Ups are Zenlytic's way of helping you ask questions that dig deeper into details of your analysis from the [Slice and Explore](https://intercom.help/zenlytic/en/articles/6927245-slice-and-explore) section.
-
-
+Follow Ups are Zenlytic's way of helping you ask questions that dig deeper into details of your analysis from the [Slice and Explore](/articles/6927245-slice-and-explore) section.
 
 For example, if you are looking at a yearly view and want to see the details of a certain month, or you'd like to see details of a certain user in your data, Zenlytic makes it easy to navigate from the page you are on, so you don't have to build a completely new report. 
 
-
-
 Navigating to follow ups
-------------------------
 
-
-Once you have [selected your metrics and slices](https://intercom.help/zenlytic/en/articles/6958661-slicing) , ask follow up questions the following 3 ways; clicking on the visualization, dragging a section on a line plot, or clicking on a table cell value.
-
-
-
+Once you have [selected your metrics and slices](/articles/6958661-slicing) , ask follow up questions the following 3 ways; clicking on the visualization, dragging a section on a line plot, or clicking on a table cell value.
 
 #### Clicking on visualization
 
-
 Click on any slice from the visualization section to show the follow up question types available.
 
-
-![](images/Screen+Recording+2023-02-06+at+11.12.11+AM.gif)
+![Follow Ups 1](/images/follow-ups-1.gif)
 #### Dragging section on a line graph
-
 
 Drag your cursor across a line graph to select a range of a slice to show the follow up question types available.
 
-
-
 If there is more than one value in the visualization, you will be prompted to select one. 
 
-
-![](images/Screen+Recording+2023-02-06+at+11.39.49+AM.gif)
+![Follow Ups 2](/images/follow-ups-2.gif)
 #### Clicking on table cell value
-
 
 Click on the table's cell value to show the follow up question types available.
 
-
-![](images/Screen+Recording+2023-02-06+at+11.18.11+AM.gif)
+![Follow Ups 3](/images/follow-ups-3.gif)
 Follow up question types
-------------------------
-
 
 There are three follow up questions types you can use to add more details to your question. They are 'Filter on selected', 'Explain the change', and 'Drill into'. 
 
-
-
 #### Filter on selected
-
 
 Filter on selected will filter the slice range you have selected and narrows down the metrics in the question. 
 
+![Followup+filter+on+selected](/images/followup+filter+on+selected.gif)
 
-![](images/followup+filter+on+selected.gif)#### Explain the change
+#### Explain the change
 
+'Explain the change' adds slices that most likely correlate to the difference in metric that has been selected. [Here is an article](/articles/6927539-explain-change) going into more details about this question type.
 
-'Explain the change' adds slices that most likely correlate to the difference in metric that has been selected. [Here is an article](https://intercom.help/zenlytic/en/articles/6927539-explain-change) going into more details about this question type.
+![Followupexplain+the+change](/images/followupexplain+the+change.gif)
 
-
-![](images/followupexplain+the+change.gif)#### Drill into
-
+#### Drill into
 
 'Drill into' adds slices that provide more detail based on the slice chosen. For example, you can drill into revenue at a user level, order level, or product level.   
   
-Each 'Drill into' slice can be configured to your business needs. [Here's an example](https://docs.zenlytic.com/docs/data_modeling/dimension#examples) of how that can be customized.
+Each 'Drill into' slice can be configured to your business needs. [Here's an example](/data_modeling/dimension#examples) of how that can be customized.
 
-
-![](images/followup+drill+into+x.gif)
+![Followup+drill+into+x](/images/followup+drill+into+x.gif)

@@ -5,31 +5,25 @@
 Starting a Table Calculation
 ============================
 
-
 Once you have a result from your question, you can add additional columns as table calculations based on the data in the table. This functionality is similar to functions in Excel. To add a table calculation, click on the three-dot menu for the column in the table's header or click the "+ Table Calculation" button.
 
-
-![](images/Screenshot+2023-02-02+at+8.50.33+PM.png)
+![Table Calculations 1](/images/table-calculations-1.png)
 
 General Tips
 ============
 
-
 #### Use autocomplete to find columns and functions. You can click or using your keyboard's arrow keys/enter to make a selection.
-
 
 ![An example of using Zenlytic's autocomplete to find columns](images/image.png)#### You edit and delete a column by hovering the column in the table and then clicking on the column menu button
 
+![Image - png)#### You edit and delete a column by hovering the column in the table and then clicking on the column menu button](/images/image.png)
 
-![](images/image.png)#### There's a collection of common formulas available in the column menu for columns that are `measures`.
+#### There's a collection of common formulas available in the column menu for columns that are `measures`.
 
-
-
-![](images/image.png)
+![Image](/images/image.png)
 
 Functions
 =========
-
 
 * sum
 * [cumulativesum](#h_8083404370)
@@ -37,28 +31,17 @@ Functions
 * [cell\_value](#h_325a463256)
 * [arithmetic operators](#h_b069e4b503)
 
-
 sum
----
-
 
 The `sum` function sums up the numeric column it operates on. For example, you could use this function like `[orders.total_revenue] / sum([orders.total_revenue])` to get the percent of the total for the total revenue column. This will divide each row of the total revenue column by the sum of its total using this function.
 
-
-
 #### Example Formula
-
-
 
 ```
 [orders.total_revenue] / sum([orders.total_revenue])
 ```
 
-
 #### Result
-
-
-
 
 |  |  |
 | --- | --- |
@@ -67,31 +50,17 @@ The `sum` function sums up the numeric column it operates on. For example, you c
 | 3 | 21% |
 | 6 | 43% |
 
-
-
----
-
 cumulativesum
--------------
-
 
 The `cumulativesum` function creates a running total of the column going in the sort order of the column. For example, if you used `cumulativesum([orders.total_revenue])`, each cell in your calculated column will be the summed up total of all previous cells in the `orders.total_revenue` column.
 
-
-
 #### Example Formula
-
-
 
 ```
 cumulativesum([orders.total_revenue])
 ```
 
-
 #### Result
-
-
-
 
 |  |  |
 | --- | --- |
@@ -100,69 +69,38 @@ cumulativesum([orders.total_revenue])
 | 3 | 8 |
 | 6 | 14 |
 
-
-
----
-
 offset
-------
-
 
 The `offset` function allows you to access the value of a cell that is a certain number of rows away from the current cell. For example, if you used `offset([orders.total_revenue], 1)`, each cell in your calculated column would be the value of the cell in `orders.total_revenue` that is `1 rows` away from the current cell.
 
-
-
 #### Example Formula
-
-
 
 ```
 offset([orders.total_revenue], 1)
 ```
 
-
 #### Result
-
-
-
 
 |  |  |
 | --- | --- |
 | **total revenue** | **fx (offset of total revenue)** |
 | 5 | NAN (because there is no previous value
 
-
----
-
  |
 | 3 | 5 |
 | 6 | 3 |
 
-
-
----
-
 cell\_value
------------
-
 
 The `cell_value` function allows you to access the value of a fixed cell at a specific row number. For example, if you used `cell_value([orders.total_revenue], 1)`, all cells in your calculated column would be the value of the cell in column `orders.total_revenue` at `row 5`.
 
-
-
 #### Example Formula
-
-
 
 ```
 cell_value([orders.total_revenue], 1)
 ```
 
-
 #### Result
-
-
-
 
 |  |  |
 | --- | --- |
@@ -171,31 +109,17 @@ cell_value([orders.total_revenue], 1)
 | 3 | 5 |
 | 6 | 5 |
 
-
-
----
-
 Arithmetic Operators (+ - / \*)
--------------------------------
-
 
 You can use the arithmetic operations `+`, `-`, `*`, and `/` to combine scalar values or other columns. For example, you could multiply the total revenue column by `.78` then add in the shipping value `[orders.total_revenue] * .78 + [orders.total_shipping]`.
 
-
-
 #### Example Formula
-
-
 
 ```
 [orders.total_revenue] * .78 + [orders.total_shipping]
 ```
 
-
 #### Result
-
-
-
 
 |  |  |  |
 | --- | --- | --- |
@@ -204,10 +128,4 @@ You can use the arithmetic operations `+`, `-`, `*`, and `/` to combine scalar v
 | 3 | 2 | 4.34 |
 | 6 | 1 | 5.68 |
 
-
-If you have additional questions about the types of formulas and functions you can use in table calculations, you can reference the developer docs [here](https://docs.zenlytic.com/docs/data_modeling/table_calculation_syntax).
-
-
-
-
-
+If you have additional questions about the types of formulas and functions you can use in table calculations, you can reference the developer docs [here](/data_modeling/table_calculation_syntax).

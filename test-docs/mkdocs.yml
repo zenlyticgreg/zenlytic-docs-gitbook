@@ -1,0 +1,22 @@
+site_name: Zenlytic Documentation
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+  - admonition
+  - footnotes
+  - meta
+  - toc:
+      permalink: true 
