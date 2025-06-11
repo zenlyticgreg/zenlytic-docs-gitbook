@@ -13,5 +13,4 @@ Explore from here
 ![Following Up From Dashboard 1](/assets/following-up-from-dashboard-1.gif)
 Start a chat with Zöe
 
-![Following Up From Dashboard 2 - gif)
-Start a chat with Zöe](/images/following-up-from-dashboard-2.gif)
+![Start a chat with Zöe](/assets/following-up-from-dashboard-2.gif)
