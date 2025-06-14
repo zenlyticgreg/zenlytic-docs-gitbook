@@ -52,6 +52,7 @@
   * [Schedule Delivery](6_workflows/schedule-delivery.md)
   * [Run History](6_workflows/run-history.md)
 * [Data Sources](7_data_sources/README.md)
+  * [Integrations Overview](7_data_sources/integrations.md)
   * [Bigquery Setup](7_data_sources/bigquery_setup.md)
   * [Snowflake Setup](7_data_sources/snowflake_setup.md)
   * [Redshift Setup](7_data_sources/redshift_setup.md)
@@ -70,5 +71,4 @@
   * [Login Troubleshooting](8_authentication/login_troubleshooting.md)
   * [Connecting To Github With A Deploy Key](8_authentication/connecting_to_github_with_a_deploy_key.md)
 * [About](9_about/README.md)
-  * [Integrations](9_about/integrations.md)
   * [License](9_about/license-doc.md) 

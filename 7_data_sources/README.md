@@ -4,6 +4,7 @@ This section covers the setup and configuration of various data sources that can
 
 ## Contents
 
+- [Integrations Overview](integrations.md) - Overview of all supported data warehouse integrations
 - [Bigquery Setup](bigquery_setup.md) - Connect and configure Google BigQuery
 - [Snowflake Setup](snowflake_setup.md) - Connect and configure Snowflake
 - [Redshift Setup](redshift_setup.md) - Connect and configure Amazon Redshift
