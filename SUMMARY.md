@@ -66,6 +66,8 @@
   * [Motherduck Setup](7_data_sources/motherduck_setup.md)
 * [Authentication & Security](8_authentication/README.md)
   * [Microsoft Entra Zenlytic](8_authentication/microsoft_entra_zenlytic.md)
+  * [Microsoft Entra Snowflake](8_authentication/microsoft_entra_snowflake.md)
+  * [Microsoft Entra Snowflake: What to Send](8_authentication/microsoft_entra_snowflake_what_to_send.md)
   * [Okta Zenlytic](8_authentication/okta_zenlytic.md)
   * [IP Whitelisting](8_authentication/ip_whitelisting.md)
   * [Login Troubleshooting](8_authentication/login_troubleshooting.md)

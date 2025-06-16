@@ -1,0 +1,36 @@
+{
+    "pages": [
+        {
+            "id": "190a8dad05ac80a2b57de8e00a7a5f7d",
+            "title": "How to use Entra to Authenticate Snowflake in Zenlytic",
+            "filename": "entra-snowflake.md"
+            
+        },
+        {
+            "id": "202a8dad05ac8022a10fed72ea9f8428",
+            "title": "Google Workload Identity Federation",
+            "filename": "google_workload_identity_federation.md"
+        },
+        {
+            "id": "b5eb4f7ac7eb4a45bc350bcd9931dc4b",
+            "title": "Installing the Zenlytic Bot in Microsoft Teams",
+            "filename": "microsoft_teams_bot.md"
+        },
+        {
+            "id": "2fc0262254d84b94bd3409e11c40b06d",
+            "title": "Plot Configuration Tips and Tricks with Zoë",
+            "filename": "plot_configuration_tips_and_tricks_with_zoe.md"
+        },
+        {
+            "id": "190a8dad05ac8079b39aed9b43db2264",
+            "title": "Entra-Snowflake: What to Send to Zenlytic",
+            "filename": "entra-snowflake-what-to-send.md"
+        }
+    ],
+    "output_structure": {
+        "docs_dir": "notion_imports/docs",
+        "assets_dir": "notion_imports/assets",
+        "final_docs_dir": "notion_imports/docs",
+        "final_assets_dir": "notion_imports/assets"
+    }
+} 
