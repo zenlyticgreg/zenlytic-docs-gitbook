@@ -24,7 +24,7 @@ Step 3: Upload the Zenlytic Bot
 
 2. In the upper-right corner, click on "Actions" and select "Upload new app" from the dropdown menu.
 
-![microsoft_teams_bot_image_1.png](/assets/microsoft_teams_bot/microsoft_teams_bot_image_1.png)
+![microsoft_teams_bot_image_1.png](/assets/3_zenlytic_ui/microsoft_teams_bot_image_1.png)
 
 3. Navigate to your zenlytic_bot.zip file, select it and proceed with the upload.
 
@@ -36,18 +36,18 @@ Step 5: Add the Zenlytic Bot to your Team
 
 1. Open the Microsoft Teams app, and you should find the Zenlytic app listed under "Apps" in the left-hand menu.
 
-![microsoft_teams_bot_image_2.png](/assets/microsoft_teams_bot/microsoft_teams_bot_image_2.png)
+![microsoft_teams_bot_image_2.png](/assets/3_zenlytic_ui/microsoft_teams_bot_image_2.png)
 
 2. Note that it might take a few hours for the app to become visible in your Teams app after publishing (based on our testing this could be up to 24 hours).
 
 3. Click on the Zenlytic app icon, then select "Add". Choose the appropriate team to which you want to add the Zenlytic Bot.
 
-![microsoft_teams_bot_image_3.png](/assets/microsoft_teams_bot/microsoft_teams_bot_image_3.png)
+![microsoft_teams_bot_image_3.png](/assets/3_zenlytic_ui/microsoft_teams_bot_image_3.png)
 
 Step 6: Chat with your Data
 
 1. The Zenlytic Bot should also be accessible for one-on-one and team conversations. It can be found under "Chat"/"Teams" in the left-hand menu of the Teams app.
 
-![microsoft_teams_bot_image_4.png](/assets/microsoft_teams_bot/microsoft_teams_bot_image_4.png)
+![microsoft_teams_bot_image_4.png](/assets/3_zenlytic_ui/microsoft_teams_bot_image_4.png)
 
 You have successfully installed the Zenlytic Bot in your Microsoft Teams environment. Enjoy exploring the features and capabilities it brings to your team 🥳

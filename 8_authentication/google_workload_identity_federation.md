@@ -4,19 +4,19 @@ These are the steps a customer needs to take to enable Workload Identity Federat
 
 2. Create a Workload Identity Pool. You can create this via the console, following these instructions. First, navigate to Workload identity federation and begin the process to create a workload identity pool
 
-![google_workload_identity_federation_image_1.png](/assets/google_workload_identity_federation/google_workload_identity_federation_image_1.png)
+![google_workload_identity_federation_image_1.png](/assets/8_authentication/google_workload_identity_federation_image_1.png)
 
 After clicking Get Started, fill out the next screen
 
-![google_workload_identity_federation_image_2.png](/assets/google_workload_identity_federation/google_workload_identity_federation_image_2.png)
+![google_workload_identity_federation_image_2.png](/assets/8_authentication/google_workload_identity_federation_image_2.png)
 
 3. Next, create the provider and add it to the Pool. Select AWS, and use the Zenlytic AWS account id 
 
-![google_workload_identity_federation_image_3.png](/assets/google_workload_identity_federation/google_workload_identity_federation_image_3.png)
+![google_workload_identity_federation_image_3.png](/assets/8_authentication/google_workload_identity_federation_image_3.png)
 
 4. Modify the provider attribute for 
 
-![google_workload_identity_federation_image_4.png](/assets/google_workload_identity_federation/google_workload_identity_federation_image_4.png)
+![google_workload_identity_federation_image_4.png](/assets/8_authentication/google_workload_identity_federation_image_4.png)
 
 5. Get the principle value to add permissions to in GCP. You will need to follow the format in these 
 
@@ -40,25 +40,25 @@ principalSet://iam.googleapis.com/projects/123456789/locations/global/workloadId
 
 6. Give that principle access to the resources in BigQuery you would like it to have. For example, in the IAM screen, click "Grant Access"
 
-![google_workload_identity_federation_image_5.png](/assets/google_workload_identity_federation/google_workload_identity_federation_image_5.png)
+![google_workload_identity_federation_image_5.png](/assets/8_authentication/google_workload_identity_federation_image_5.png)
 
 Then paste the full url of the principle that you defined earlier in the principle option and hit enter. After you do that, you can give the principle the required roles for BigQuery.
 
-![google_workload_identity_federation_image_6.png](/assets/google_workload_identity_federation/google_workload_identity_federation_image_6.png)
+![google_workload_identity_federation_image_6.png](/assets/8_authenticationon/google_workload_identity_federation_image_6.png)
 
 Finally, click Save.
 
 7. Download the config for the principle to connect. In the Workload Identity Pool, click Grant Access to get started
 
-![google_workload_identity_federation_image_7.png](/assets/google_workload_identity_federation/google_workload_identity_federation_image_7.png)
+![google_workload_identity_federation_image_7.png](/assets/8_authentication/google_workload_identity_federation_image_7.png)
 
 Then leave the first option checked, and click Download config
 
-![google_workload_identity_federation_image_8.png](/assets/google_workload_identity_federation/google_workload_identity_federation_image_8.png)
+![google_workload_identity_federation_image_8.png](/assets/8_authentication/google_workload_identity_federation_image_8.png)
 
 Finally, select the Zenlytic AWS zenlytic-aws provider, and click Download config
 
-![google_workload_identity_federation_image_9.png](/assets/google_workload_identity_federation/google_workload_identity_federation_image_9.png)
+![google_workload_identity_federation_image_9.png](/assets/8_authentication/google_workload_identity_federation_image_9.png)
 
 You will put this config into Zenlytic to configure the connection to BigQuery, after adding the project_id to the json.
 

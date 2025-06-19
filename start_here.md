@@ -18,7 +18,7 @@ For example, to connect with this [example repo](https://github.com/Zenlytic/dem
 
 Finally, finish filling out your data warehouse's connection information and click save
 
-![Finish Connection](../assets/finish-connection.png)
+![Finish Connection](../assets/3_zenlytic_ui/finish-connection.png)
 
 
 ## Git 
@@ -36,7 +36,7 @@ To start defining metrics, go to the [Data Model Editor](https://app.zenlytic.co
 To add a new table click "Create view from table" and select tables to bring into your data model. You can bring tables in using AI to define your metrics (which takes 1-3 min), or you can uncheck that box to just get the explicit table metadata.
 
 
-![Create View from Table](../assets/create-view-from-table.png)
+![Create View from Table](../assets/4_embedding/create-view-from-table.png)
 
 
 Once, the table is imported, you'll see a yaml file with dimensions defined. Make sure you select your desired `default_date` for the [view](../5_data_modeling/5_view.md) if you're defining metrics, define the [identifiers](../5_data_modeling/6_join.md) for joins, and define the aggregates ([metrics / measures](../5_data_modeling/93_measure.md)) you want to use.
@@ -67,7 +67,5 @@ To make your changes live for other users on the production branch, click "Deplo
 If you want to learn more about how to use the user interface and the different capabilities it has, check out the [documentation on the user interface](../3_zenlytic_ui/1_using_zenlytic.md)!
 
 If you want to learn about data modeling and how to define your metrics check out the [documentation on the data model](../5_data_modeling/1_data_modeling.md)
-
-If you'd like to learn about how to get everything set up for defining those metric definitions look at the [documentation on your metric development environment](../7_development_environment/1_development_environment.md)
 
 As always, feel free to reach out to your Zenlytic contact if you have questions that aren't answered in the documentation!

@@ -83,13 +83,13 @@ You can use a unique id generator website for the second part of the url
 
 1. Go to the home page of your new Zenlytic Snowflake App Registration and click Add a Redirect URI
 
-![entra-snowflake_image_1.png](/assets/entra-snowflake/entra-snowflake_image_1.png)
+![entra-snowflake_image_1.png](/assets/8_authenticationentra-snowflake_image_1.png)
 
 2. Click Add a Platform
 
 3. Choose Single-page application
 
-![entra-snowflake_image_2.png](/assets/entra-snowflake/entra-snowflake_image_2.png)
+![entra-snowflake_image_2.png](/assets/8_authentication/entra-snowflake_image_2.png)
 
 4. Under the Redirect URIs section, enter https://<your_company_sudomain>.zenlytic.com 
 
@@ -99,7 +99,7 @@ You can use a unique id generator website for the second part of the url
 
 7. Select Access tokens (used for implicit flows) and ID tokens (used for implicit and hybrid flows)
 
-![entra-snowflake_image_3.png](/assets/entra-snowflake/entra-snowflake_image_3.png)
+![entra-snowflake_image_3.png](/assets/8_authentication/entra-snowflake_image_3.png)
 
 8. Click Configure
 
@@ -125,7 +125,7 @@ You can use a unique id generator website for the second part of the url
 
 - Click on the Snowflake OAuth Resource that you created in Configure the OAuth resource in Microsoft Entra ID.
 
-![entra-snowflake_image_4.png](/assets/entra-snowflake/entra-snowflake_image_4.png)
+![entra-snowflake_image_4.png](/assets/8_authentication/entra-snowflake_image_4.png)
 
 - Click on the Delegated Permissions box.
 
@@ -147,7 +147,7 @@ You can use a unique id generator website for the second part of the url
 
 - Click on the Snowflake OAuth Resource that you created in Configure the OAuth resource in Microsoft Entra ID.
 
-![entra-snowflake_image_5.png](/assets/entra-snowflake/entra-snowflake_image_5.png)
+![entra-snowflake_image_5.png](/assets/8_authentication/entra-snowflake_image_5.png)
 
 - Click on the Application Permissions.
 

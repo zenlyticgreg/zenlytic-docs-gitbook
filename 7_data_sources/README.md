@@ -16,4 +16,3 @@ This section covers the setup and configuration of various data sources that can
 - [Druid Setup](druid_setup.md) - Connect and configure Apache Druid
 - [Trino Onboarding](trino_onboarding.md) - Connect and configure Trino
 - [Motherduck Setup](motherduck_setup.md) - Connect and configure MotherDuck
-- [Git Data Model Setup](git_data_model_setup.md) - Configure Git-based data models
