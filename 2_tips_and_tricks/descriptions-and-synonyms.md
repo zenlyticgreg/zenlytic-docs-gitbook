@@ -25,7 +25,7 @@ You can use the `synonyms` tag to specify keywords for Zoë so she can find the 
 
 In this example, we've added the synonyms `customer` and `loyalty` to the `new_vs_repeat` field to make sure if Zoë users are asking about "existing customers" or repeat behavior like "loyalty" this field will show up in context for Zoë. 
 
-```bash
+```yaml
 - name: new_vs_repeat
   field_type: dimension
   type: string

@@ -1,67 +1,68 @@
 # Prerequisite
 
-Before continuing make sure you understand the full process outlined here in Snowflake’s guide. This guide mostly comprises Snowflake’s, with some extra context added in some potentially confusing areas.
+Before continuing make sure you understand the full process outlined here in Snowflake's guide. This guide mostly comprises Snowflake's, with some extra context added in some potentially confusing areas.
 
-# Understanding the Requirements
+## Understanding the Requirements
 
-Zenlytic will need both access to both of the flows listed in Snowflake’s guide:
+Zenlytic will need both access to both of the flows listed in Snowflake's guide:
 
 1. The authorization server can grant the OAuth client an access token on behalf of the user.
 
 2. The authorization server can grant the OAuth client an access token for the OAuth client itself.
 
-# Step 1: Configure Zenlytic in Microsoft Entra ID
+## Step 1: Configuring Zenlytic in Microsoft Entra ID
 
 ### Create the OAuth Resource
 
-1. Navigate to the Microsoft Azure Portal and authenticate.
+1. Navigate to the Microsoft Azure Portal and authenticate
 
-2. Navigate to Microsoft Entra ID.
+2. Navigate to Microsoft Entra ID
 
-3. Click on App Registrations.
+3. Click on App Registrations
 
-4. Click on New Registration.
+4. Click on New Registration
 
-5. Enter Zenlytic Snowflake, or similar value as the Name.
+5. Enter Zenlytic Snowflake, or similar value as the Name
 
-6. Verify the Supported account types is set to Single Tenant.
+6. Verify the Supported account types is set to Single Tenant
 
-7. Leave Redirect URI empty.
+7. Leave Redirect URI empty
 
-8. Click Register.
+8. Click Register
 
-### Expose the API
+## Expose the API
 
-1. Click on Expose an API.
+1. Click on Expose an API
 
-2. Click on the Add link next to Application ID URI to set the Application ID URI.
+2. Click on the Add link next to Application ID URI to set the Application ID URI
 
-The Application ID URI must be unique within your organization’s directory, such as https://your.company.com/4d2a8c2b-a5f4-4b86-93ca-294185f45f2e.
+The Application ID URI must be unique within your organization's directory, such as `https://your.company.com/4d2a8c2b-a5f4-4b86-93ca-294185f45f2e`.
 
-Tip
+:::tip
 You can use a unique id generator website for the second part of the url
+:::
 
-3. Now we’ll add the scope for the web app client, click on Add a scope to add a scope representing the Snowflake role.
+3. Now we'll add the scope for the web app client, click on Add a scope to add a scope representing the Snowflake role.
 
-- Enter the scope by having the name of the Snowflake role with the session:scope: prefix. For example, for the Snowflake Analyst role, enter session:scope:analyst.
+- Enter the scope by having the name of the Snowflake role with the session:scope: prefix. For example, for the Snowflake Analyst role, enter `session:scope:analyst`
 
-- Select who can consent.
+- Select who can consent
 
-- Enter a display name for the scope (e.g.: Account Admin).
+- Enter a display name for the scope (e.g.: Account Admin)
 
-- Enter a description for the scope (e.g.: Can administer the Snowflake account).
+- Enter a description for the scope (e.g.: Can administer the Snowflake account)
 
-- Click Add Scope.
+- Click Add Scope
 
-4. And now we’ll add the scope for the api
+4. And now we'll add the scope for the api
 
-- Click on Manifest.
+- Click on Manifest
 
-- Locate the appRoles element.
+- Locate the appRoles element
 
-- Enter an App Role with the following settings.
+- Enter an App Role with the following settings
 
-- The App Role manifests as follows.
+- The App Role manifests as follows
 
 ```javascript
 "appRoles":[
@@ -79,7 +80,7 @@ You can use a unique id generator website for the second part of the url
 
 5. Click Save
 
-## Set up Redirect URI
+### Set up Redirect URI
 
 1. Go to the home page of your new Zenlytic Snowflake App Registration and click Add a Redirect URI
 
@@ -91,78 +92,78 @@ You can use a unique id generator website for the second part of the url
 
 ![entra-snowflake_image_2.png](/assets/8_authentication/entra-snowflake_image_2.png)
 
-4. Under the Redirect URIs section, enter https://<your_company_sudomain>.zenlytic.com 
+4. Under the Redirect URIs section, enter `https://<your_company_sudomain>.zenlytic.com `
 
-5. Ex: https://mycompany.zenlytic.com 
+    **Example: https://mycompany.zenlytic.com**
 
-6. If you’re not sure what your subdomain is, reach out to your Zenlytic contact
+5. If you're not sure what your subdomain is, reach out to your Zenlytic contact
 
-7. Select Access tokens (used for implicit flows) and ID tokens (used for implicit and hybrid flows)
+6. Select Access tokens (used for implicit flows) and ID tokens (used for implicit and hybrid flows)
 
 ![entra-snowflake_image_3.png](/assets/8_authentication/entra-snowflake_image_3.png)
 
-8. Click Configure
+7. Click Configure
 
-# Step 2: Create the OAuth Client
+## Step 2: Create the OAuth Client
 
-1. In the Overview section of your Zenlytic Snowflake application, copy the ClientID from the Application (client) ID field.
+1. In the Overview section of your Zenlytic Snowflake application, copy the ClientID from the Application (client) ID field
 
-2. Click on Certificates & secrets and then New client secret.
+2. Click on Certificates & secrets and then New client secret
 
-3. Add a description of the secret.
+3. Add a description of the secret
 
-4. Select the time period that you feel comfortable with. Once this secret expires, Zenlytic will lose the ability to authenticate with Snowflake. You’ll need to generate and share with Zenlytic a new secret before that expires to avoid downtime.
+4. Select the time period that you feel comfortable with. Once this secret expires, Zenlytic will lose the ability to authenticate with Snowflake. You'll need to generate and share with Zenlytic a new secret before that expires to avoid downtime
 
-5. Click Add. Copy the secret for later.
+5. Click Add. Copy the secret for later
 
-6. Now we need to configure Delegated permissions for the Zenlytic
+6. Now we need to configure Delegated permissions for the Zenlytic:
 
-- Click on API Permissions.
+- Click on API Permissions
 
-- Click on Add Permission.
+- Click on Add Permission
 
-- Click on My APIs.
+- Click on My APIs
 
-- Click on the Snowflake OAuth Resource that you created in Configure the OAuth resource in Microsoft Entra ID.
+- Click on the Snowflake OAuth Resource that you created in Configure the OAuth resource in Microsoft Entra ID
 
 ![entra-snowflake_image_4.png](/assets/8_authentication/entra-snowflake_image_4.png)
 
-- Click on the Delegated Permissions box.
+- Click on the Delegated Permissions box
 
-- Check on the Permission related to the Scopes defined in the Application that you wish to grant to this client.
+- Check on the Permission related to the Scopes defined in the Application that you wish to grant to this client
 
-- Click Add Permissions.
+- Click Add Permissions
 
 - Choose the permission you wish to grant Zenlytic
 
-- Click Add Permission.
+- Click Add Permission
 
-7. Now we need to configure API permissions for Applications as follows.
+7. Now we need to configure API permissions for Applications as follows
 
-- Click on API Permissions.
+- Click on API Permissions
 
-- Click on Add Permission.
+- Click on Add Permission
 
-- Click on My APIs.
+- Click on My APIs
 
-- Click on the Snowflake OAuth Resource that you created in Configure the OAuth resource in Microsoft Entra ID.
+- Click on the Snowflake OAuth Resource that you created in Configure the OAuth resource in Microsoft Entra ID
 
 ![entra-snowflake_image_5.png](/assets/8_authentication/entra-snowflake_image_5.png)
 
-- Click on the Application Permissions.
+- Click on the Application Permissions
 
-- Check on the Permission related to the Roles manually defined in the Manifest of the Application that you wish to grant to this client.
+- Check on the Permission related to the Roles manually defined in the Manifest of the Application that you wish to grant to this client
 
-- Click Add Permissions.
+- Click Add Permissions
 
 - Choose the permission you wish to grant Zenlytic
 
-- Click Yes.
+- Click Yes
 
-# Step 3: Next Steps
+## Step 3: Next Steps
 
-1. You’ll now need to make sure your Entra instance and Snowflake have the appropriate security integrations. Follow the guide here.
+1. You'll now need to make sure your Entra instance and Snowflake have the appropriate security integrations. Follow the guide here.
 
-2. Next, you’ll need to send your Zenlytic contact the appropriate information outlined here.
+2. Next, you'll need to send your Zenlytic contact the appropriate information outlined here.
 
-3. Reach out to your Zenlytic contact with any questions/issues about the process
+3. Reach out to your Zenlytic contact or [support@zenlytic.com](mailto:support@zenlytic.com) with any questions/issues about the process

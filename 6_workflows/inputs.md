@@ -12,7 +12,7 @@ Now that our Input has been created, we have to modify the Workflow messages to 
 
 ![input-used](../assets/6_workflows/inputs-used.png)
 
-In the following image, I've created another input and added it to the first Workflow message. The file attachment input is shown in the bottom right of the card and can be changed or removed by clicking the chip. In the Workflow preview on the right, a dashed region above the user message represents the input file that will be uploaded by the Workflow runner. 
+In the following image, another input was created and added to the first Workflow message. The file attachment input is shown in the bottom right of the card and can be changed or removed by clicking the chip. In the Workflow preview on the right, a dashed region above the user message represents the input file that will be uploaded by the Workflow runner. 
 
 ![all-inputs-used](../assets/6_workflows/all-inputs-used.png)
 

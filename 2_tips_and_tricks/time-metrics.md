@@ -7,7 +7,7 @@ Each metric in Zenlytic should be associated with a time dimension group. The as
 
 You can associate a time dimension with a view using the `default_date` property. 
 
-```bash
+```yaml
 version: 1
 type: view
 name: google_ad_stats
@@ -40,7 +40,7 @@ The default date will be the default `canon_date` for all metrics in that view u
 
 Using an example from subscription management:
 
-```bash
+```yaml
 version: 1
 type: view
 name: subscriptions

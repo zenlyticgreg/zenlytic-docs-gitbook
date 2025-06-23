@@ -1,24 +1,24 @@
 # Data Modeling
 
-This section covers all aspects of data modeling in Zenlytic.
+This section covers how to build data models in Zenlytic. Data models are the foundation of how Zenlytic understands your data and how Zoë (Zenlytic's AI Analyst) can answer questions about it.
 
 ## Contents
 
-- [Data Modeling Overview](1_data_modeling.md)
-- [Model](2_model.md)
-- [Dashboard](3_dashboard.md)
-- [Topic](4_topic.md)
-- [View](5_view.md)
-- [Join](6_join.md)
-- [Set](7_set.md)
-- [Access Grants](8_access_grants.md)
-- [Field](9_field.md)
-- [Dimension](91_dimension.md)
-- [Dimension Group](92_dimension_group.md)
-- [Measure](93_measure.md)
-- [Field Filter](94_field_filter.md)
-- [Formatting](95_formatting.md)
-- [Symmetric Aggregates](96_symmetric_aggregates.md)
-- [Table Calculation Syntax](97_table_calculation_syntax.md)
-- [Referenceable Attributes](98_referenceable_attributes.md)
-- [dbt MetricFlow](12_dbt_metricflow.md) 
+- [Data Modeling Overview](data_modeling.md)
+- [Model](model.md)
+- [Dashboard](dashboard.md)
+- [Topic](topic.md)
+- [View](view.md)
+- [Join](join.md)
+- [Set](set.md)
+- [Access Grants](access_grants.md)
+- [Field](field.md)
+- [dbt MetricFlow Integration](dbt_metricflow.md)
+- [Dimension](dimension.md)
+- [Dimension Group](dimension_group.md)
+- [Measure](measure.md)
+- [Field Filter](field_filter.md)
+- [Formatting](formatting.md)
+- [Symmetric Aggregates](symmetric_aggregates.md)
+- [Table Calculation Syntax](table_calculation_syntax.md)
+- [Referenceable Attributes](referenceable_attributes.md) 

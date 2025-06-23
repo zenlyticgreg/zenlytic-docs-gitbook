@@ -1,8 +1,8 @@
-## Prerequisite
+## What to Send to Zenlytic for Configuring Entra with Snowflake
 
 Before continuing, complete the setup process in this document to configure Zenlytic as an OAuth provider for Snowflake and Microsoft Entra.
 
-## What to Send to your Zenlytic Contact
+## The following items are a prerequisite to send to Zenlytic
 
 1. Application (client) ID
 
@@ -28,6 +28,6 @@ Before continuing, complete the setup process in this document to configure Zenl
 
 4. In the Application ID URI section, copy the value.
 
-5. TIP: Make sure to keep this information secure and share it only with your Zenlytic contact.
+    a. **TIP**: Make sure to keep this information secure and share it only with your Zenlytic contact.
 
 ![entra-snowflake-what-to-send_image_4.png](/assets/8_authentication/entra-snowflake-what-to-send_image_4.png)

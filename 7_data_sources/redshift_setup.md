@@ -1,51 +1,61 @@
-# Redshift setup
+# Redshift Setup
 
-> Connect your Redshift data warehouse to Zenlytic
+To connect Zenlytic to Amazon Redshift, you'll need to configure the connection with your database credentials. Here's how to do it:
 
-This document will help you connect your Redshift data warehouse to Zenlytic to access modern, LLM-powered business intelligence.
+## Step 1: Gather Connection Information
 
-Connection Name
+You'll need the following information from your Redshift cluster:
 
-First, you'll name your connection. This name is how Zenlytic's [model](/data_modeling/model) connects the credentials you'll enter in the next step to your data warehouse. You can name the credential whatever you want, but we usually recommend naming it something like `my_company_name` to keep things simple.
+- **Host**: Your Redshift cluster endpoint
+- **Port**: Usually 5439 (default Redshift port)
+- **Database**: The database name
+- **Username**: A database user with appropriate permissions
+- **Password**: The password for the user
 
-Host
-====
+## Step 2: Create a Database User (if needed)
 
-The host for Redshift is the "Endpoint" value in your AWS console. 
+If you don't have a dedicated user for Zenlytic, create one:
 
-![Redshift Setup 1](/assets/redshift-setup-1.png)
-
-In this example using Redshift Serverless, the host (privacy obscured) is `default.123456789.us-east-1.redshift-serverless.amazonaws.com:5439/dev`
-
-Username
-
-This is the username for Redshift. You'll create this user using SQL. In this example, let's assume your username is `redshift_user`
-
-Password
-
-This is the password associated with the user you entered above.
-
-Database
-
-This is the default database to connect to when connecting to Redshift. You can find this value under Namespace Configuration.
-
-![Redshift Setup 2](/assets/redshift-setup-2.png)
-
-In this example, the database is `dev`
-
-Port
-
-The default port is `5439`, so leave this field empty unless you've changed the value for the port.
-
-Schema (optional)
-
-This is the schema you want to use as a default. This field is optional and is usually left blank.
-
-### IP Whitelisting
-
-If you use IP whitelisting in your data warehouse, whitelist the following IP addresses:
-
+```sql
+CREATE USER zenlytic_user WITH PASSWORD 'your_secure_password';
+GRANT USAGE ON DATABASE your_database TO zenlytic_user;
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO zenlytic_user;
 ```
-184.73.175.163 
-18.209.132.30
-```
+
+## Step 3: Add the Connection in Zenlytic
+
+1. In Zenlytic, go to Settings > Data Sources
+2. Click "Add Data Source"
+3. Select "Redshift" from the list
+4. Enter the connection details:
+   - **Host**: Your Redshift cluster endpoint
+   - **Port**: 5439 (or your custom port)
+   - **Database**: Your database name
+   - **Username**: Your database username
+   - **Password**: Your database password
+
+![Redshift Setup 1](../assets/7_data_sources/redshift-setup-1.png)
+
+## Step 4: Configure Security Group
+
+Make sure your Redshift security group allows connections from Zenlytic's IP addresses:
+
+- **184.73.175.163**
+- **18.209.132.30**
+
+## Step 5: Test Your Connection
+
+1. Click "Test Connection" to verify it works
+2. If successful, click "Save"
+3. You should now be able to see your Redshift tables in Zenlytic
+
+![Redshift Setup 2](../assets/7_data_sources/redshift-setup-2.png)
+
+## Troubleshooting
+
+If you encounter connection issues:
+
+1. Verify the host endpoint is correct
+2. Check that the security group allows connections from Zenlytic's IPs
+3. Ensure the user has the necessary permissions
+4. Verify the database name and credentials are correct

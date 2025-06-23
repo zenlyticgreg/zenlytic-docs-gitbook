@@ -1,51 +1,61 @@
-# Postgres setup
+# PostgreSQL Setup
 
-> Connect your Postgres database to Zenlytic
+To connect Zenlytic to PostgreSQL, you'll need to configure the connection with your database credentials. Here's how to do it:
 
-This document will help you connect your Postgres database to Zenlytic to access modern, LLM-powered business intelligence.
+## Step 1: Gather Connection Information
 
-Connection Name
+You'll need the following information from your PostgreSQL database:
 
-First, you'll name your connection. This name is how Zenlytic's [model](/data_modeling/model) connects the credentials you'll enter in the next step to your data warehouse. You can name the credential whatever you want, but we usually recommend naming it something like `my_company_name` to keep things simple.
+- **Host**: Your PostgreSQL server hostname or IP address
+- **Port**: Usually 5432 (default PostgreSQL port)
+- **Database**: The database name
+- **Username**: A database user with appropriate permissions
+- **Password**: The password for the user
 
-Host
+## Step 2: Create a Database User (if needed)
 
-The host for Postgres is the "Endpoint" value in your AWS console (if you're using AWS). If you're not using AWS, you must get the host value and enter it.
+If you don't have a dedicated user for Zenlytic, create one:
 
-![Postgres Setup 1](/assets/postgres-setup-1.png)
-In this example using Postgres hosted on RDS, the host (privacy obscured) is `zenlytic-demo-data-db.blahblahblah.us-east-1.rds.amazonaws.com`
-
-Username
-
-This is the username for your Postgres user. You'll create a user in SQL and use that username/password combination to let Zenlytic connect to your database.
-
-In this example, we'll assume your username is `postgres_user`
-
-Password
-
-This is the password associated with the user you entered above.
-
-Database
-
-The database is where you have the data you're interested in Postgres. You can use a tool like [PgAdmin](https://www.pgadmin.org/) or [psql](https://www.postgresql.org/docs/current/app-psql.html) to view databases in your Postgres instance. In this example, we'll assume your database is named `analytics`
-
-Port
-
-The default port is `5432`, so leave this field empty unless you've changed the value for the port.
-
-Schema (optional)
-
-This is the schema you want to use as a default. This field is optional and is usually left blank.
-
-Advanced Settings (SSH Tunnel)
-
-There are also advanced settings that allow you to configure the connection to flow through a bastion host via SSH.
-
-### IP Whitelisting
-
-If you use IP whitelisting in your data warehouse, whitelist the following IP addresses:
-
+```sql
+CREATE USER zenlytic_user WITH PASSWORD 'your_secure_password';
+GRANT CONNECT ON DATABASE your_database TO zenlytic_user;
+GRANT USAGE ON SCHEMA public TO zenlytic_user;
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO zenlytic_user;
 ```
-184.73.175.163 
-18.209.132.30
-```
+
+## Step 3: Add the Connection in Zenlytic
+
+1. In Zenlytic, go to Settings > Data Sources
+2. Click "Add Data Source"
+3. Select "PostgreSQL" from the list
+4. Enter the connection details:
+   - **Host**: Your PostgreSQL server hostname
+   - **Port**: 5432 (or your custom port)
+   - **Database**: Your database name
+   - **Username**: Your database username
+   - **Password**: Your database password
+
+![Postgres Setup 1](../assets/7_data_sources/postgres-setup-1.png)
+
+## Step 4: Configure Firewall/Security
+
+Make sure your PostgreSQL server allows connections from Zenlytic's IP addresses:
+
+- **184.73.175.163**
+- **18.209.132.30**
+
+## Step 5: Test Your Connection
+
+1. Click "Test Connection" to verify it works
+2. If successful, click "Save"
+3. You should now be able to see your PostgreSQL tables in Zenlytic
+
+## Troubleshooting
+
+If you encounter connection issues:
+
+1. Verify the host and port are correct
+2. Check that the firewall allows connections from Zenlytic's IPs
+3. Ensure the user has the necessary permissions
+4. Verify the database name and credentials are correct
+5. Check that PostgreSQL is configured to accept remote connections

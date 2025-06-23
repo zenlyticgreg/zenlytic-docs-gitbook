@@ -1,44 +1,52 @@
-# Databricks setup
+# Databricks Setup
 
-> This article will help you connect your Databricks instance to Zenlytic
+To connect Zenlytic to Databricks, you'll need to configure the connection using a personal access token. Here's how to do it:
 
-This document will help you connect your Databricks data warehouse to Zenlytic to access modern, LLM-powered business intelligence.
+## Step 1: Create a Personal Access Token
 
-Connection Name
+1. Log into your Databricks workspace
+2. Go to User Settings (click your username in the top right)
+3. Click on "Developer" tab
+4. Click "Generate New Token"
+5. Give it a name (e.g., "Zenlytic Integration")
+6. Set an expiration date
+7. Click "Generate"
+8. Copy the token (you won't be able to see it again)
 
-First, you'll name your connection. This name is how Zenlytic's [model](/data_modeling/model) connects the credentials you'll enter in the next step to your data warehouse. You can name the credential whatever you want, but we usually recommend naming it something like `my_company_name` to keep things simple.
+![Databricks Setup 1](../assets/7_data_sources/databricks-setup-1.png)
 
-Server Hostname
+## Step 2: Get Your Workspace URL
 
-The Server Hostname in Databricks is how we know which Databricks SQL Warehouse to connect to. To get this value, go to the Connection Details tab of the SQL warehouse you want to connect.
+1. In your Databricks workspace, look at the URL in your browser
+2. It should look like: `https://your-workspace.cloud.databricks.com`
+3. Copy this URL
 
-![Databricks Setup 1](/assets/databricks-setup-1.png)
+![Databricks Setup 1](../assets/7_data_sources/databricks-setup-1.png)
 
-The value under the first header, "Server Hostname" is the value you should use.
+## Step 3: Add the Connection in Zenlytic
 
-Http Path
+1. In Zenlytic, go to Settings > Data Sources
+2. Click "Add Data Source"
+3. Select "Databricks" from the list
+4. Enter the connection details:
+   - **Workspace URL**: Your Databricks workspace URL
+   - **Personal Access Token**: The token you generated
+   - **HTTP Path**: Usually `/sql/1.0/warehouses/<warehouse-id>`
 
-To get this value, go to the Connection Details tab of the SQL warehouse you want to connect and use the value under the "Http Path" heading.
+![Databricks Setup 2](../assets/7_data_sources/databricks-setup-2.png)
 
-![Databricks Setup 1](/assets/databricks-setup-1.png)
+## Step 4: Configure HTTP Path
 
-Personal Access Token
+To find your HTTP path:
+1. Go to SQL Warehouses in Databricks
+2. Click on your warehouse
+3. Look for the "Connection Details" section
+4. Copy the HTTP Path
 
-This is the access token associated with the user you want to use for connecting to Zenlytic. To find or create this token, go to User Settings -> Developer -> Access Tokens
+![Databricks Setup 3](../assets/7_data_sources/databricks-setup-3.png)
 
-![Databricks Setup 2](/assets/databricks-setup-2.png)
-Then, click Generate New Token, set the Lifetime (days) to empty (this indicates the token does not expire), give the token a name like "Zenlytic" and click Generate
+## Step 5: Test Your Connection
 
-![Databricks Setup 3 - png)
-Then, click Generate New Token, set the Lifetime (days) to empty (this indicates the token does not expire), give the token a name like "Zenlytic" and click Generate](/images/databricks-setup-3.png)
-
-The value shown in the next step is the value you will use.
-
-IP Whitelisting
-
-If you use IP whitelisting in your data warehouse, whitelist the following IP addresses:
-
-```
-184.73.175.163 
-18.209.132.30
-```
+1. Click "Test Connection" to verify it works
+2. If successful, click "Save"
+3. You should now be able to see your Databricks tables in Zenlytic

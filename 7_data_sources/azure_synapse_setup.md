@@ -1,47 +1,60 @@
 # Azure Synapse Setup
 
-> Connect your Azure Synapse Analytics Warehouse to Zenlytic
+To connect Zenlytic to Azure Synapse Analytics, you'll need to configure the connection with your database credentials. Here's how to do it:
 
-This document will help you connect your Azure Synapse Analytics Warehouse to Zenlytic to access modern, LLM-powered business intelligence.
+## Step 1: Gather Connection Information
 
-Connection Name
+You'll need the following information from your Azure Synapse workspace:
 
-First, you'll name your connection. This name is how Zenlytic's [model](/data_modeling/model) connects the credentials you'll enter in the next step to your data warehouse. You can name the credential whatever you want, but we usually recommend naming it something like `my_company_name` to keep things simple.
+- **Server**: Your Azure Synapse server name
+- **Database**: The database name
+- **Username**: A database user with appropriate permissions
+- **Password**: The password for the user
+- **Port**: Usually 1433 (default SQL Server port)
 
-Host
+## Step 2: Create a Database User (if needed)
 
-The host for Azure Synapse Analytics is the "Dedicated SQL Endpoint" value in your Azure console.
+If you don't have a dedicated user for Zenlytic, create one:
 
-![Azure Synapse Setup 1](/assets/azure-synapse-setup-1.png)
-In this example, using Azure Synapse Analytics Warehouse with a Dedicated SQL Pool, the host is `zenlytic-demo-warehouse.sql.azuresynapse.net`
-
-Username
-
-This is the username for your Azure Synapse Analytics user. You'll create a user in SQL and use that username/password combination to let Zenlytic connect to your warehouse.
-
-In this example, we'll assume your username is `synapse_user`
-
-Password
-
-This is the password associated with the user you entered above.
-
-Database
-
-The database is where you have the data you're interested in SQL Server. In this example, we'll assume your database is named `analytics`
-
-Port
-
-The default port is `1433`, so leave this field empty unless you've changed the value for the port.
-
-Schema (optional)
-
-This is the schema you'd like to use as a default. This field is optional and is usually left blank.
-
-IP Whitelisting
-
-If you use IP whitelisting in your data warehouse, whitelist the following IP addresses:
-
+```sql
+CREATE USER zenlytic_user WITH PASSWORD = 'your_secure_password';
+GRANT CONNECT TO zenlytic_user;
+GRANT SELECT ON SCHEMA::dbo TO zenlytic_user;
 ```
-184.73.175.163 
-18.209.132.30
-```
+
+## Step 3: Add the Connection in Zenlytic
+
+1. In Zenlytic, go to Settings > Data Sources
+2. Click "Add Data Source"
+3. Select "Azure Synapse" from the list
+4. Enter the connection details:
+   - **Server**: Your Azure Synapse server name
+   - **Database**: Your database name
+   - **Username**: Your database username
+   - **Password**: Your database password
+   - **Port**: 1433 (or your custom port)
+
+![Azure Synapse Setup 1](../assets/7_data_sources/azure-synapse-setup-1.png)
+
+## Step 4: Configure Firewall Rules
+
+Make sure your Azure Synapse firewall allows connections from Zenlytic's IP addresses:
+
+- **184.73.175.163**
+- **18.209.132.30**
+
+## Step 5: Test Your Connection
+
+1. Click "Test Connection" to verify it works
+2. If successful, click "Save"
+3. You should now be able to see your Azure Synapse tables in Zenlytic
+
+## Troubleshooting
+
+If you encounter connection issues:
+
+1. Verify the server name is correct
+2. Check that the firewall allows connections from Zenlytic's IPs
+3. Ensure the user has the necessary permissions
+4. Verify the database name and credentials are correct
+5. Check that Azure Synapse is running and accessible

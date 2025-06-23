@@ -1,9 +1,6 @@
 # User Roles
 
-> Permissions sets that give users the ability to take certain actions in Zenlytic
-
-Zenlytic User Roles
-===================
+Permissions sets that give users the ability to take certain actions in Zenlytic
 
 There are eight (8) roles in Zenlytic that a user can have. Each role corresponds to a permission set. Available permissions and their actions are as follows:
 
@@ -35,36 +32,36 @@ There are eight (8) roles in Zenlytic that a user can have. Each role correspond
 
 `create_personal_field`: The ability to create a personal field (does not include the ability to promote it to the data model).
 
-Admin
+## Admin
 
 The admin has *all* of the above permissions.
 
-Develop
+## Develop
 
 Develop has all of the admin permissions except the ability to edit the workspace settings (`edit_settings`).
 
-Develop without Deploy
+##Develop without Deploy
 
 Develop without Deploy has all of the Develop permissions except the ability to deploy the data model to production (`deploy_to_production`).
 
-Explore
+## Explore
 
 The Explore role is the most common, and we recommend it as the default. It has `save_content`, `schedule_content`, `view_content`, `explore_from_here`, `download_with_limit`, `download_without_limit`, `see_sql`, and `chat`.
 
-View
+## View
 
 View has the same permissions as Explore but without `download_without_limit`.
 
-Restricted
+## Restricted
 
 Restricted has ONLY the `view_content` permission. This means the user can only see dashboards, and cannot follow up or ask Zoë questions. 
 
-*Note:* This user can change filters on dashboards which means in terms of API access, they have the ability to run queries that are not just the queries present on the dashboard. You should use this role in conjunction with [data access controls](/data_modeling/access_grants), not instead of data access controls.
+*Note:* This user can change filters on dashboards which means in terms of API access, they have the ability to run queries that are not just the queries present on the dashboard. You should use this role in conjunction with [data access controls](../5_data_modeling/access_grants.md), not instead of data access controls.
 
-Embed
+## Embed
 
 This permission set is not available in the UI but is the default for embedded users. It has `view_content`, `explore_from_here`, `download_with_limit`, and `chat` permissions.
 
-Embedded with Scheduling
+## Embedded with Scheduling
 
 This permission set is not available in the UI but is the default for embedded users. It (predictably) has `schedule_content`, `view_content`, `see_sql`, `explore_from_here`, `download_with_limit`, and `chat` permissions.

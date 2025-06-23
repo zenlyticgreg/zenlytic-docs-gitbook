@@ -1,30 +1,39 @@
-# Motherduck Setup
+# MotherDuck Setup
 
-> For a ducking great setup experience
+To connect Zenlytic to MotherDuck, you'll need to configure the connection using a service token. Here's how to do it:
 
-This document will help you connect your DuckDB data warehouse (on Motherduck) to Zenlytic to access modern, LLM-powered business intelligence.
+## Step 1: Create a Service Token
 
-Connection Name
+1. Log into your MotherDuck account
+2. Go to Settings > Service Tokens
+3. Click "Create Service Token"
+4. Give it a name (e.g., "Zenlytic Integration")
+5. Set appropriate permissions (read access to your databases)
+6. Click "Create"
+7. Copy the token (you won't be able to see it again)
 
-First, you'll name your connection. This name is how Zenlytic's [model](/data_modeling/model) connects the credentials you'll enter in the next step to your data warehouse. You can name the credential whatever you want, but we usually recommend naming it something like `my_company_name` to keep things simple.
+## Step 2: Add the Connection in Zenlytic
 
-Service Token
+1. In Zenlytic, go to Settings > Data Sources
+2. Click "Add Data Source"
+3. Select "MotherDuck" from the list
+4. Enter the connection details:
+   - **Service Token**: The token you generated
+   - **Database**: Your database name (optional, can be specified later)
 
-You'll go to settings in your Motherduck interface, and copy the service token using the copy button on this page.
+![Motherduck Setup 1](../assets/7_data_sources/motherduck-setup-1.png)
 
-![Motherduck Setup 1](/assets/motherduck-setup-1.png)
+## Step 3: Test Your Connection
 
-Then, you'll put the service token in the Zenyltic interface.
+1. Click "Test Connection" to verify it works
+2. If successful, click "Save"
+3. You should now be able to see your MotherDuck tables in Zenlytic
 
-Database
+## Troubleshooting
 
-You must specify the database you want Zenlytic to connect to using DuckDB. For example, when you set up a new account with Motherduck, you'll have a database called `sample_data`, to connect that database to Zenlytic, you'd enter `sample_data` in the database field. 
+If you encounter connection issues:
 
-### IP Whitelisting
-
-If you use IP whitelisting in your data warehouse, whitelist the following IP addresses:
-
-```
-184.73.175.163 
-18.209.132.30
-```
+1. Verify the service token is correct
+2. Check that the token has the necessary permissions
+3. Ensure the database name is correct (if specified)
+4. Verify your MotherDuck account is active

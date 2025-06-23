@@ -8,9 +8,9 @@ The second is by chatting with [Zöe](https://www.zenlytic.com/product#:~:text=a
 
 For both options, select the 3-dot menu in the top right-hand corner of a chart in a dashboard.
 
-Explore from here
+## Explore from here
 
-![Following Up From Dashboard 1](/assets/following-up-from-dashboard-1.gif)
+![Following Up From Dashboard 1](../assets/3_zenlytic_ui/following-up-from-dashboard-1.gif)
 Start a chat with Zöe
 
-![Start a chat with Zöe](/assets/following-up-from-dashboard-2.gif)
+![Start a chat with Zöe](../assets/3_zenlytic_ui/following-up-from-dashboard-2.gif)

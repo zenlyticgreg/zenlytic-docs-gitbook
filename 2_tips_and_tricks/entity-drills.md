@@ -3,7 +3,7 @@
 
 You can use drills/entities in Zenlytic to let Zoë know about important entities in your data. Entities can be any group of fields that you want, and they can describe anything from `products` to `users` to `transactions` to `sales_reps`. Let's look at an example of defining one of those entities for `sales_reps`:
 
-```bash
+```yaml
 version: 1
 type: view
 name: sales_reps
