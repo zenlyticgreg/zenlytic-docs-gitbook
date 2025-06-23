@@ -18,4 +18,18 @@ Desktop.ini
 node_modules/
 
 # Build output
-_book/ 
+_book/
+
+# Python virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Import-related files
+notion_import.py
+notion_pages.json
+transform.sh
+requirements.txt
+*_imports/
+*_import/ 
