@@ -23,4 +23,5 @@ If there are errors when you're editing, you'll see the error and where it's loc
 When you're ready to deploy to production, the button in the upper right will turn green and you'll see it say "Deploy to Production."
 
 ![Data Model Editor 5](../assets/4_embedding/data-model-editor-5.png)
+
 When you click this button, the code on your branch will be merged into the production branch and Zoë (Zenlytic's chat interface) will be updated with any added metrics and dimensions. That update process takes a few seconds, so allow about 10 seconds before using Zoë after adding new metrics to production.

@@ -29,6 +29,7 @@ If there is more than one value in the visualization, you will be prompted to se
 Click on the table's cell value to show the follow up question types available.
 
 ![Follow Ups 3](../assets/3_zenlytic_ui/follow-ups-3.gif)
+
 Follow up question types
 
 There are three follow up questions types you can use to add more details to your question. They are 'Filter on selected', 'Explain the change', and 'Drill into'. 

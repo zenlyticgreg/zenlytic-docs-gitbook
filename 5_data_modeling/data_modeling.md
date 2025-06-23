@@ -8,16 +8,16 @@ Note: You can also use our automatic LookML -> ZenML converter [here](https://lo
 ## Key concepts
 
 - [Models](../5_data_modeling/model.md)
-    * Models are references to a database connection. They serve as the data model's reference to the warehouses itself. They give your data model the ability to reference multiple data warehouses, and set some high level properties like the week start day or the timezone.
+    - Models are references to a database connection. They serve as the data model's reference to the warehouses itself. They give your data model the ability to reference multiple data warehouses, and set some high level properties like the week start day or the timezone.
 
 - [Views](../5_data_modeling/view.md)
-    * Views directly represent a underlying database table. They contain both the [dimensions (columns)](../5_data_modeling/dimension.md) and [measures (aggregates)](../5_data_modeling/measure.md) inside of the table they reference. In addition, they contain [identifiers](../5_data_modeling/view.md#identifiers) which define the possible join to or from the table.
+    - Views directly represent a underlying database table. They contain both the [dimensions (columns)](../5_data_modeling/dimension.md) and [measures (aggregates)](../5_data_modeling/measure.md) inside of the table they reference. In addition, they contain [identifiers](../5_data_modeling/view.md#identifiers) which define the possible join to or from the table.
 
 - [Dimensions](../5_data_modeling/dimension.md)
-    * A dimension represents a column in the database table it's view references. You can also have groups of dimensions (like timeframes) which reference the same column with different transformations applied.
+    - A dimension represents a column in the database table it's view references. You can also have groups of dimensions (like timeframes) which reference the same column with different transformations applied.
 
 - [Measures (metrics)](../5_data_modeling/measure.md)
-    * A measure (or metric) represents the aggregation of a dimension or dimensions inside the table its view references. Any valid aggregation in a SQL statement with a `group by` will work as a measure (e.g. `sum(sales)`).
+    - A measure (or metric) represents the aggregation of a dimension or dimensions inside the table its view references. Any valid aggregation in a SQL statement with a `group by` will work as a measure (e.g. `sum(sales)`).
 
 
 ## Examples

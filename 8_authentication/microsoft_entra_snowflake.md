@@ -82,6 +82,7 @@ The App Role manifests as follows.
 
 2. Click Add a Platform
 3. Choose Single-page application
+
 ![Single Page Application](../assets/8_authentication/entra-snowflake_image_2.png)
 
 4. Under the **Redirect URIs** section, enter `https://<your_company_subdomain>.zenlytic.com` 
@@ -89,6 +90,7 @@ The App Role manifests as follows.
     b. If you're not sure what your subdomain is, reach out to your Zenlytic contact
 
 5. Select **Access tokens (used for implicit flows)** and **ID tokens (used for implicit and hybrid flows)**
+
 ![Access Tokens](../assets/8_authentication/entra-snowflake_image_3.png)
 
 6. Click Configure
@@ -110,6 +112,7 @@ The App Role manifests as follows.
     - Click on **Add Permission**.
     - Click on **My APIs**.
     - Click on the **Snowflake OAuth Resource** that you created in [Step 1: Configure Zenlytic in Microsoft Entra ID](#step-1-configure-zenlytic-in-microsoft-entra-id)
+
     ![Redirect URI](../assets/8_authentication/entra-snowflake_image_4.png)
 
     - Click on the **Delegated Permissions** box.
@@ -123,6 +126,7 @@ The App Role manifests as follows.
     - Click on **Add Permission**.
     - Click on **My APIs**.
     - Click on the **Snowflake OAuth Resource** that you created in [Step 1: Configure Zenlytic in Microsoft Entra ID](#step-1-configure-zenlytic-in-microsoft-entra-id)
+
     ![Redirect URI](../assets/8_authentication/entra-snowflake_image_5.png)
 
     - Click on the **Application Permissions**.

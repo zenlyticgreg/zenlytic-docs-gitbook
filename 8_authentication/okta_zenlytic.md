@@ -63,7 +63,7 @@ Optionally, you may choose to set values for:
     These may already be set up, but make sure those are showing up in the Okta Profile Editor. 
     ​
 
-![Okta Profile Editor](..assets/8_authentication/okta_1.png)
+![Okta Profile Editor](../assets/8_authentication/okta_1.png)
 
 ## Configuration
 
@@ -104,4 +104,4 @@ Reach out to **[support@zenlytic.com](mailto:support@zenlytic.com)** if you want
 
 If you're having issues logging into Zenlytic, make sure you have the `Name` value set up in your `Attribute Mapping`. This may automatically already be set up in your Okta instance:
 ​
-![Okta Profile Editor Attribute](..assets/8_authentication/okta_2.png)
+![Okta Profile Editor Attribute](../assets/8_authentication/okta_2.png)
