@@ -3,7 +3,7 @@
 * [Introduction](intro.md)
 * [Start Here](start_here.md)
 * [Tips and Tricks](2_tips_and_tricks/README.md)
-  * [Getting Started](2_tips_and_tricks/getting-started.md)
+  * [Working with Zoë Tips and Tricks](2_tips_and_tricks/zoe_tips_and_tricks.md)
   * [Naming Conventions](2_tips_and_tricks/naming-conventions.md)
   * [Descriptions and Synonyms](2_tips_and_tricks/descriptions-and-synonyms.md)
   * [Entity Drills](2_tips_and_tricks/entity-drills.md)
