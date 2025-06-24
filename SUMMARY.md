@@ -1,4 +1,4 @@
-# Summary
+# Table of contents
 
 * [Introduction](intro.md)
 * [Start Here](start_here.md)
@@ -68,13 +68,13 @@
   * [Trino Onboarding](7_data_sources/trino_onboarding.md)
   * [Motherduck Setup](7_data_sources/motherduck_setup.md)
 * [Authentication & Security](8_authentication/README.md)
-  * [Microsoft Entra Snowflake](8_authentication/microsoft_entra_snowflake.md)
   * [Microsoft Entra Zenlytic](8_authentication/microsoft_entra_zenlytic.md)
+  * [Snowflake with Microsoft Entra](8_authentication/microsoft_entra_snowflake.md)
+  * [Snowflake with Entra - What to Send](8_authentication/entra-snowflake-what-to-send.md)
   * [Okta Zenlytic](8_authentication/okta_zenlytic.md)
-  * [Entra Snowflake - What to Send](8_authentication/entra-snowflake-what-to-send.md)
   * [Google Workload Identity Federation](8_authentication/google_workload_identity_federation.md)
   * [IP Whitelisting](8_authentication/ip_whitelisting.md)
   * [Login Troubleshooting](8_authentication/login_troubleshooting.md)
   * [Connecting To Github With A Deploy Key](8_authentication/connecting_to_github_with_a_deploy_key.md)
 * [About](9_about/README.md)
-  * [License](9_about/license-doc.md) 
+  * [License](9_about/license-doc.md)
