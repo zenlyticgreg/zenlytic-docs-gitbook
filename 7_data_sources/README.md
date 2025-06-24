@@ -7,7 +7,6 @@ This section covers the setup and configuration of various data sources that can
 - [Integrations Overview](integrations.md)
 - [Bigquery Setup](bigquery_setup.md)
 - [Snowflake Setup](snowflake_setup.md)
-- [Snowflake Setup](snowflake_setup_2.md)
 - [Redshift Setup](redshift_setup.md)
 - [Postgres Setup](postgres_setup.md)
 - [Mysql Setup](mysql_setup.md)

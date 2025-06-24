@@ -1,5 +1,6 @@
+# Data Indexing
 
-# Let Zoë know about categorical values
+Let Zoë know about categorical values
 
 Zoë will *never* index your data unless you explicitly tell her to. This protects your privacy and makes sure we never index sensitive or regulated data.
 

@@ -1,9 +1,15 @@
-# How to use Entra to Authenticate Snowflake in Zenlytic
+# How to setup Microsoft Entra to Authenticate in Zenlytic
 
 This document will guide you through the process of enabling Microsoft Entra (formerly Active Directory) as an authentication option with Snowflake.
 
-**Prerequisites** 
-Before continuing make sure you understand the full process outlined here in [Snowflake's guide](https://docs.snowflake.com/en/user-guide/oauth-azure#label-configure-oauth-resource-in-microsoft-idp). This guide mostly comprises Snowflake's, with some extra context added in some potentially confusing areas.
+## Outcome
+
+- You'll have a custom sign in page with an option to Sign in with Microsoft Entra.
+- You'll be able to control access to Zenlytic via Microsoft Entra
+
+## Prerequisites
+
+- Before continuing make sure you understand the full process outlined here in [Snowflake's guide](https://docs.snowflake.com/en/user-guide/oauth-azure#label-configure-oauth-resource-in-microsoft-idp). This guide mostly comprises Snowflake's, with some extra context added in some potentially confusing areas.
 
 ## Understanding the Requirements
 

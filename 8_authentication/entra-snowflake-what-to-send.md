@@ -1,4 +1,4 @@
-## What to Send to Zenlytic for Configuring Entra with Snowflake
+# What to Send to Zenlytic for Configuring Entra with Snowflake
 
 Before continuing, complete the setup process in this document to configure Zenlytic as an OAuth provider for Snowflake and Microsoft Entra.
 

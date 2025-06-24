@@ -8,7 +8,6 @@ You do not need to specify a join to add a view to a topic if there is already a
 
 Topics are how Zoë understands what views join together and how she finds data that is related to each other.
 
-
 ## Properties
 
 `type`: (Required) The type of the file. For these topic files is should always be `topic`.
@@ -56,7 +55,6 @@ If a view is specified with empty braces `{}` or without a `join` property, defa
 
 
 `extra`: The extra property is like dbt `meta` property, and you can put whatever additional properties you want in here. For example, under this property you could add a property like this `maintainer: "jane doe"`
-
 
 ## Examples 
 

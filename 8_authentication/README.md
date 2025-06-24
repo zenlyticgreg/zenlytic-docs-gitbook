@@ -4,10 +4,10 @@ This section covers authentication methods, security configurations, and trouble
 
 ## Contents
 
-- [Microsoft Entra Zenlytic](microsoft_entra_snowflake.md)
-- [Okta Zenlytic](okta_zenlytic.md)
-- [Entra Snowflake](entra-snowflake.md)
+- [Microsoft Entra Snowflake](microsoft_entra_snowflake.md)
 - [Entra Snowflake - What to Send](entra-snowflake-what-to-send.md)
+- [Okta Zenlytic](okta_zenlytic.md)
+- [Microsoft Entra Zenlytic](microsoft_entra_zenlytic.md)
 - [Google Workload Identity Federation](google_workload_identity_federation.md)
 - [IP Whitelisting](ip_whitelisting.md)
 - [Login Troubleshooting](login_troubleshooting.md)

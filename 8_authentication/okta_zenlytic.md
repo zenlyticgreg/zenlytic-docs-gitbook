@@ -82,11 +82,10 @@ Got all the information at hand (outlined below)? Fabulous! Now, email it to **[
 Relax and let Zenlytic's support team take over from here. They will handle your request and reach out once the integration is configured.
 
 ## Upon Completion
-==================
 
 Once the setup process is complete, you will be provided with your company's Zenlytic login url.
 
-For example, if your `Company ID` is "mycompany", then your login url will be https://mycompany.zenlytic.com/login.
+For example, if your `Company ID` is "mycompany", then your login url will be `https://mycompany.zenlytic.com/login`.
 
 Your Zenlytic contact will have added you as the admin to your Zenlytic Workspace.
 

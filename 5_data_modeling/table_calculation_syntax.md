@@ -1,9 +1,6 @@
-
 # Table Calculations
 
-
 This is a reference for the functions available to the table calculations, including examples of usage in practice.
-
 
 `sum`: The sum function sums up the numeric column it operates on. For example, you could use this function like `[orders.total_revenue] / sum([orders.total_revenue])` to get the percent of the total for the total revenue column. This will divide each row of the total revenue column by the sum of it's total using this function.
 
@@ -22,7 +19,6 @@ This is a reference for the functions available to the table calculations, inclu
 | 6 | 14 | 
 
 `+ - * /`: You can use the arithmetic operations `+`, `-`, `*`, and `/` to combine scalar values or other columns. For example, you could multiply the total revenue column by `.78` then add in the shipping value `[orders.total_revenue] * .78 + [orders.total_shipping]`.
-
 
 | total revenue | total shipping | fx (total revenue * .78 + total shipping) | 
 |---------------|----|---------|

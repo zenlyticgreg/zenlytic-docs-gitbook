@@ -4,7 +4,7 @@
 
 This document will help you connect your Snowflake data warehouse to Zenlytic to access modern, LLM-powered business intelligence. 
 
-##C onnection Name
+## Connection Name
 
 First, you'll name your connection. This name is how Zenlytic's [model](/5_data_modeling/model) connects the credentials you'll enter in the next step to your data warehouse. You can name the credential whatever you want, but we usually recommend naming it something like `my_company_name` to keep things simple.
 
@@ -69,11 +69,43 @@ If you use IP whitelisting in your data warehouse, whitelist the following IP ad
 18.209.132.30
 ```
 
+## I need to create a user for Zenlytic
+
+Look at this section if you need to create a new user for Zenlytic to use when accessing Snowflake.
+
+### Step 1: Create a Snowflake User
+
+1. Log into your Snowflake account as an admin
+2. Go to "Users" in the admin panel
+3. Click "Create User"
+4. Set a username (e.g., "zenlytic_user")
+5. Set a secure password
+6. Assign appropriate roles (typically "PUBLIC" and any custom roles needed)
+
+### Step 2: Grant Permissions
+
+Run the following SQL commands to grant necessary permissions:
+
+```sql
+-- Grant usage on warehouse
+GRANT USAGE ON WAREHOUSE <your_warehouse_name> TO ROLE <your_role_name>;
+
+-- Grant usage on database
+GRANT USAGE ON DATABASE <your_database_name> TO ROLE <your_role_name>;
+
+-- Grant usage on schema
+GRANT USAGE ON SCHEMA <your_database_name>.<your_schema_name> TO ROLE <your_role_name>;
+
+-- Grant select on all tables in schema
+GRANT SELECT ON ALL TABLES IN SCHEMA <your_database_name>.<your_schema_name> TO ROLE <your_role_name>;
+```
+
+
 ## Advanced Settings
 
 *You can ignore this section if you're not using a Snowflake Share directly.* 
 
-Advanced settings in Snowflake deal with situations where you're running analysis directly on data you've received via a Snowflake Share. Since Zenlytic uses Temporary Tables for functionality like [Explain Change](../3_zenlytic_ui/exploring.md#explain-the-change), you'll need to specify a Zenlytic database and schema Zenlytic will use to manifest temporary tables. To fulfill this requirement, you can create any database and schema with nothing in them.
+Advanced settings in Snowflake deal with situations where you're running analysis directly on data you've received via a Snowflake Share.
 
 **Zenlytic Database Name**
 
@@ -82,3 +114,5 @@ Create a database and enter that database name (e.g. `zenlytic_database`)
 **Zenlytic Schema Name**
 
 Create a schema and enter that schema name (e.g. `zenlytic_schema`)
+
+

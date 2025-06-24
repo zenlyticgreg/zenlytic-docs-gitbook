@@ -1,5 +1,7 @@
 # BigQuery Setup
 
+> **Note:** Alternatively to creating a service account, you can use [Workload Identity Federation to connect to BigQuery](../8_authentication/google_workload_identity_federation.md).
+
 To connect Zenlytic to BigQuery, you'll need to create a service account and download the JSON key file. Here's how to do it:
 
 ## Step 1: Create a Service Account
