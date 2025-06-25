@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# Measure
+# Measures
 
 Measures (or metrics) are aggregations performed inside of a SQL `group by` statement. A simple one is `sum(sales)`, which you could specify in your data model with `type: sum` and `sql: ${TABLE}.sales`. They can get highly complex and are as flexible as your data warehouse's SQL syntax.
 
@@ -70,7 +70,7 @@ For example, let's look at a daily MRR table that includes one row per date of t
 | 2022-01-03   | 125         | Basic      | $20        |
 | 2022-01-04   | 126         | Enterprise | $100       |
 
-The Non Additive Dimension has three properties in it.
+The Non Additive Dimension has three properties
 
 * `name`: This references the fully qualified name of the field you're referencing (e.g. `record_date_raw`).
 * `window_choice`: This is either `max` or `min` and indicated whether you want to choose the start of period value (min) or the end of period value (max).

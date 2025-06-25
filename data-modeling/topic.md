@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# Topic
+# Topics
 
 Topics are collections of tables (views) that can be joined together using foreign keys. They are specified in their own yaml files. Each topic uses its model's `connection` that it is defined in to get data.
 
@@ -42,7 +42,7 @@ Topics are how Zoë understands what views join together and how she finds data 
 
 `always_filter`: This is an optional list of filters which use the usual [field filter selection syntax](field_filter.md) and will _always_ be applied to the query. These filters are applied to the entire query, not just a metric or dimension, and if it is not possible to reference or join in the field needed for the filter it will result in an error.
 
-Example below:
+### **Example below:**
 
 Here are two filters that will be applied to _all_ queries that reference this topic. All fields need to specify the `view_name.field_name` they reference. Fields will be joined in dynamically whenever this topic is referenced to apply the filters.
 

@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# Dimension Group
+# Dimension Groups
 
 Dimension Groups are a particular type of dimension used for timeframes (referencing the same date column but having slices for it daily, weekly, monthly, etc), and for intervals (referencing the difference between two date columns and slicing it days between, weeks between, months between, etc).
 
@@ -77,11 +77,11 @@ You can also reference any [referenceable attributes](referenceable_attributes.m
 
 ## Timeframes
 
-:::tip Fiscal date reporting
+{% hint style="info" %}
+Fiscal date reporting
 
 All `fiscal_` timeframes are based on the model's `fiscal_month_offset` property. This let's you set up your fiscal year/quarter/month reporting right in Zenlytic! Find out more information [here](model.md).
-
-:::
+{% endhint %}
 
 The available timeframe options are:
 

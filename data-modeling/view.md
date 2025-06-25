@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# View
+# Views
 
 Views reference exactly one table in the database. They can be joined together using `identifiers` but always reference the same table in the database.
 
@@ -71,7 +71,7 @@ derived_table:
 
 Note: This set of filters _will not_ be applied if you are using a derived table mentioned above instead of `sql_table_name`.
 
-Example below:
+### Example below:
 
 Here are two filters that will be applied to _all_ queries that reference this view. One field `context_os` is present in the view, and does not need to specify its view name. The other field `is_churned` is _not_ present in this view and must specify its view name. It will be joined in dynamically whenever this view is referenced to apply the filter.
 

@@ -14,7 +14,10 @@ layout:
 
 # Access Grants
 
-Access control is managed in Zenlytic through two concepts. The first, [access grants](access_grants.md#access-grants), cover _column-based_ access control, and the second, [access filters](access_grants.md#access-filters), cover _row-based_ access control.
+Access control is managed in Zenlytic through two concepts.&#x20;
+
+1. [Access grants](access_grants.md#access-grants) cover _column-based_ access control
+2. [Access filters](access_grants.md#access-filters) cover _row-based_ access control
 
 ## Access grants
 

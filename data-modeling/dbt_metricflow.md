@@ -24,7 +24,8 @@ To start, you will need to connect your github repo that has your dbt semantic l
 
 Next, you'll need to add a `zenlytic_project.yml` file in the root of the repo. This file is what Zenlytic uses to find files in your repo. You'll want it to look like:
 
-:::note Configuration File
+{% hint style="info" %}
+Configuration File
 
 ```
 # The name doesn't matter functionally.
@@ -54,8 +55,7 @@ dashboard-paths:
 model-paths:
 - models
 ```
-
-:::
+{% endhint %}
 
 Once you have that `zenlytic_project.yml` file ready to go, Zenlytic will be able to see your files.
 

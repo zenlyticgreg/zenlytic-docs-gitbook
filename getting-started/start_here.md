@@ -25,9 +25,9 @@ There are two external connections Zenlytic needs to make to function.
 
 You can click "+ Add Connection" under "Database Connections" in the settings menu. You'll first need to select your warehouse type from the drop down, and name your connection.
 
-The naming of the connection is how Zenlytic links database credentials with your data model. The name of the connection here must be the same as the `connection` property in the [model](../data-modeling/model.md) or the same as the dbt `profile` if integrating with dbt Metricflow without a model file.
+The naming of the connection is how Zenlytic links database credentials with your data model. The name of the connection here must be the same as the `connection` property in the [model](../data-modeling/model.md) or the same as the dbt `profile` if integrating with dbt Metricflow without a model file
 
-For example, to connect with this [example repo](https://github.com/Zenlytic/demo-data-model) we'd use the connection name `demo` because that's the value of `connection` in the [model file](https://github.com/Zenlytic/demo-data-model/blob/master/models/pure_organics_model.yml).
+For example, to connect with this [example repo](https://github.com/Zenlytic/demo-data-model) we'd use the connection name `demo` because that's the value of `connection` in the [model file](https://github.com/Zenlytic/demo-data-model/blob/master/models/pure_organics_model.yml)
 
 Finally, finish filling out your data warehouse's connection information and click save
 

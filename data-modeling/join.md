@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# Join
+# Joins
 
 Joins are how views are connected to each other. The are defined by `identifiers` on the views. `identifiers` can be defined as primary keys, foreign keys, or explicit point to point joins.
 
@@ -92,11 +92,11 @@ fields:
 
 In many situations you will have many to many relationships in your data. For example, let's think about a SaaS application that has tables `users` and `workspaces`. A user can be a part of one or more workspaces, which means we'll need a "bridge" table called `user_workspaces` that shows which users have access to which workspaces. If we set up joins (identifiers) in the `user_workspaces` view as follows the join will happen as we expect.
 
-:::tip Composite keys vs. Custom joins
+{% hint style="info" %}
+Composite keys vs. Custom joins
 
 Composite keys just handle choosing the correct bridge table, they do not construct a join like `a.user_id=b.user_id and a.workspace_id=b.workspace_id`. For that behavior, use a custom join mentioned above.
-
-:::
+{% endhint %}
 
 ```yaml
 version: 1
@@ -214,11 +214,11 @@ This is the `demo_model` model. It contains a connection to the warehouse and a 
 
 Mappings are not meant to map separate fields to the one field in separate mapping arguments. For example, if you want to map field X and field Y to field Z, you must do so with a `fields` argument like `fields: [view_1.X, view_2.Y, view_3.Z]`, NOT in two separate mappings, one mapping X -> Z and the other mapping Y -> Z.
 
-:::tip Mappings with null values
+{% hint style="info" %}
+Mappings with null values
 
 Most databases have logic that results in `null=null` being `false` which, means if you map two columns, both with null values, the two nulls won't map to each other. You can solve this using your database's `ifnull` function to replace those `null` values with a string of your choosing.
-
-:::
+{% endhint %}
 
 ```yaml
 version: 1
