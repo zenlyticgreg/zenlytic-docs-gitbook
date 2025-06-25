@@ -16,7 +16,7 @@ layout:
 
 Zoë is an AI data analyst who uses your data to answer questions for you. This will describe some of her capabilities, and how to get best results.
 
-## Just ask.
+## Just ask!
 
 To get started using Zoë, just ask her a question. If you don't know what you can ask about, simply ask what data she can see, or what would be a great question to ask next. She will be even more helpful if you share your job title and more context about what you're trying to accomplish.
 
