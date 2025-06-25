@@ -3,6 +3,7 @@
 ## Getting Started
 
 * [Zenlytic Documentation](intro.md)
+* [Copy of Zenlytic Documentation](getting-started/intro-1.md)
 * [Start Here](getting-started/start_here.md)
 * [License](getting-started/license-doc.md)
 
